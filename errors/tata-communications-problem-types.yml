@@ -1,0 +1,86 @@
+generated: '2026-07-25'
+method: derived
+source: openapi/tata-communications-number-intelligence-api.json, openapi/tata-communications-mobile-messaging-exchange-account-administration.json,
+  openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+format: vendor-json
+notes: No RFC 9457 application/problem+json usage is declared in any published Tata Communications specification.
+  The Mobile Messaging Exchange CDR Report API defines a two-field ErrorResponse envelope (status, message);
+  the Number Intelligence API returns bare string error responses. No provider-published error-code reference
+  was found on any anonymously reachable property.
+envelope:
+  schema: ErrorResponse
+  fields:
+  - name: status
+    type: string
+    description: Http status of the response
+  - name: message
+    type: string
+    description: Error description
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+problems:
+- status: 400
+  title: 'Request is semantically incorrect or missing required parameters. | Error: CDRs for the selected
+    period are not loaded because the SMS retry period of 72 hours is not completed'
+  schema: ErrorResponse
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#cdr_by_messageId
+- status: 400
+  title: 'Request is semantically incorrect or missing required parameters. | Error: CDRs for the selected
+    period are not loaded because the SMS retry period of 72 hours is not completed'
+  schema: ErrorResponse
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#top_25_cdr
+- status: 400
+  title: Request formatting error
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupDetails
+- status: 400
+  title: Request formatting error
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupRecords
+- status: 401
+  title: Unauthorized
+  schema: ErrorResponse
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#cdr_by_messageId
+- status: 401
+  title: Unauthorized
+  schema: ErrorResponse
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#top_25_cdr
+- status: 401
+  title: Customer couldn't be authenticated
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupDetails
+- status: 401
+  title: Customer couldn't be authenticated
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupRecords
+- status: 403
+  title: Customer has been authenticated but customer isn't having access on the requested data
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupDetails
+- status: 403
+  title: Customer has been authenticated but customer isn't having access on the requested data
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupRecords
+- status: 404
+  title: No data present for the queried TN
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupDetails
+- status: 404
+  title: No data present for the queried TN
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupRecords
+- status: 500
+  title: Internal Server Error
+  schema: ErrorResponse
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#cdr_by_messageId
+- status: 500
+  title: Internal Server Error
+  schema: ErrorResponse
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#top_25_cdr
+- status: 500
+  title: Service Unavailable
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupDetails
+- status: 500
+  title: Service Unavailable
+  schema: null
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupRecords

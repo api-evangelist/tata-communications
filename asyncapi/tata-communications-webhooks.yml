@@ -1,0 +1,91 @@
+generated: '2026-07-25'
+method: searched
+source: https://tatacommunicationsdigo.io/documentation-api/
+spec_type: none
+asyncapi_published: false
+notes: >-
+  Tata Communications publishes no AsyncAPI document anywhere. It does document a real
+  webhook/callback surface, but only on the DIGO CPaaS property and only as HTML — the
+  event names and payload field tables below are transcribed from the DIGO documentation
+  pages, which at the time of capture were reachable only with TLS verification disabled
+  because the tatacommunicationsdigo.io certificate (CN=tatacommunicationsdigo.io, Thawte
+  TLS RSA CA G1) expired 2026-07-23. A "Horizontal Webhook API" also appears by name in the
+  first-party Akana portal catalogue but returns 401 to an anonymous caller, so nothing about
+  it can be recorded. No webhook signing, retry, or replay policy is published for any of it.
+transport: HTTP POST to a customer-supplied endpoint
+catalogs:
+- product: DIGO WhatsApp for Business
+  docs: https://tatacommunicationsdigo.io/documentation-and-apis-details/?pt=7&p_link=4
+  subscription: Webhook URL configured per account
+  events:
+  - name: Text webhook format
+    kind: inbound-message
+  - name: Reaction message webhook format
+    kind: inbound-message
+  - name: Media Messages webhook format
+    kind: inbound-message
+  - name: Unknown Message
+    kind: inbound-message
+  - name: Location Messages Webhook Format
+    kind: inbound-message
+  - name: Contact Messages Webhook Format
+    kind: inbound-message
+  - name: Received Callback from a Quick Reply Button
+    kind: inbound-interaction
+  - name: Received Answer from List Messages
+    kind: inbound-interaction
+  - name: Received Answer from Reply Button
+    kind: inbound-interaction
+  - name: 'Status : Message Sent'
+    kind: delivery-status
+  - name: 'Status: Message Delivered'
+    kind: delivery-status
+  - name: 'Status: Message Read'
+    kind: delivery-status
+  - name: 'Status: Message Deleted'
+    kind: delivery-status
+  - name: 'Status: Message Failed'
+    kind: delivery-status
+- product: DIGO Engage
+  docs: https://tatacommunicationsdigo.io/documentation-and-apis-details/?pt=6&p_link=3
+  events:
+  - name: DLR Call back Report
+    kind: delivery-receipt
+    description: >-
+      Delivery-receipt callback submitted by the Engage platform to the customer endpoint
+      supplied in the dlr.url field at message submission.
+  - name: Tiny URL Call back Report
+    kind: click-event
+    docs: https://tatacommunicationsdigo.io/documentation-and-apis-details/?pt=6&p_link=4
+    description: >-
+      POSTed to the customer endpoint once a shortened URL delivered in a message is clicked
+      on the handset.
+    payload:
+    - {field: msisdn, description: Mobile number, required: true}
+    - {field: message, description: Message content, required: true}
+    - {field: country, description: Country of destination number, required: true}
+    - {field: submitId, description: Unique ID generated during message submission, required: true}
+    - {field: OS, description: Operating system of mobile handset, required: true}
+    - {field: title, description: Title of URL page, required: true}
+    - {field: IP, description: IP address from where the URL is clicked, required: true}
+    - {field: click_time, description: Click timestamp, required: true}
+    - {field: long_url, description: Original URL, required: true}
+    - {field: short_url, description: Shortened URL, required: true}
+- product: DIGO SMS
+  docs: https://tatacommunicationsdigo.io/documentation-and-apis-details/?pt=2&p_link=4
+  events:
+  - name: CDR Report
+    kind: report
+    note: >-
+      Documented as a pull report rather than a push callback; listed here for completeness
+      of the DIGO event surface.
+gated:
+- name: Horizontal Webhook API
+  where: developer.tatacommunications.com (Akana portal catalogue)
+  status: 401
+  note: Named in the catalogue, not anonymously accessible; no event list can be recorded.
+gaps:
+- No AsyncAPI document.
+- No webhook signature/verification scheme published.
+- No retry, backoff, or replay policy published.
+- No first-party event catalog on developer.tatacommunications.com or the MOVE portal.

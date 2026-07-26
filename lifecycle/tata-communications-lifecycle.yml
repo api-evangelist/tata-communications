@@ -1,0 +1,61 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  https://developer.tatacommunications.com/api/apis;
+  https://developer.tatacommunications.com/api/apis/versions/{versionId};
+  openapi/*.json
+notes: >-
+  Tata Communications publishes no versioning policy, no deprecation policy, no SLA
+  document, and no status page for its APIs. What it does expose is the Akana Community
+  Manager version model — every API is a named version with an environment, a lifecycle
+  state, and created/updated timestamps — which is recorded here because it is the only
+  lifecycle signal a developer can actually read anonymously.
+versioning:
+  scheme: portal-version-record
+  current: '1.0'
+  in_path: false
+  docs: https://developer.tatacommunications.com/apis
+  note: >-
+    Each API on the Akana portal carries a single version named "1.0" in state
+    com.soa.api.state.open, environment "Production". Version is not expressed in a URI
+    path or a header in any published specification — no host or basePath is declared at
+    all, so the versioning surface of the running API cannot be observed anonymously.
+versions:
+- api: Number Intelligence API
+  version: '1.0'
+  state: com.soa.api.state.open
+  environment: Production
+  visibility: Public
+  created: '2021-02-17'
+  updated: '2026-04-16'
+  source: https://developer.tatacommunications.com/api/apis/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+- api: Mobile Messaging Exchange - Account Administration
+  version: '1.0'
+  visibility: Public
+  published: '2025-08-06'
+  source: https://developer.tatacommunications.com/api/apis
+- api: Mobile Messaging Exchange - CDR Report API
+  version: '1.0'
+  visibility: Public
+  published: '2026-07-09'
+  source: https://developer.tatacommunications.com/api/apis
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No deprecation policy, no Sunset/Deprecation header support documented.
+deprecated_operations: []
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No API SLA is published. Network and managed-service SLAs are contractual and sit
+    behind the TCx customer portal.
+status_page: null
+status_page_note: >-
+  No first-party status page exists. status.tatacommunications.com does not resolve;
+  tatacommunications.statuspage.io is unclaimed and redirects to Atlassian.
+roadmap: null
+changelog: null
+changelog_note: >-
+  No dated changelog is published on any Tata Communications developer property. The only
+  change signal is the Updated timestamp on each Akana version record.

@@ -1,0 +1,382 @@
+# Tata Communications
+
+## About
+Tata Communications is a global digital ecosystem enabler and part of the Tata Group, one of India's most trusted conglomerates. The company serves enterprises across 190+ countries with a presence in 50+ countries and one of the world's largest subsea cable networks. Tata Communications helps enterprises build, deploy, and scale next-generation digital infrastructure across cloud, AI, networking, cybersecurity, unified communications, mobility, and media. It is recognised as a Leader in the Gartner Magic Quadrant for Global WAN Services for 13 consecutive years.
+
+## What Tata Communications Does
+Tata Communications enables enterprise digital transformation through six core pillars: Cloud and AI infrastructure, Global Network and Connectivity, Cybersecurity, Unified Communications (via Kaleyra), Mobility and IoT, and Media and Entertainment. Unlike hyperscalers, Tata Communications specialises in enterprise-grade managed services with a strong focus on global connectivity, compliance, and industry-specific solutions, acting as a digital fabric connecting enterprises worldwide.
+
+## Who It Serves
+Large enterprises, multinational corporations, financial institutions, media companies, healthcare organisations, sports bodies, automotive brands, and government entities requiring secure, globally connected, and compliant digital infrastructure.
+
+## Frequently Asked Questions
+- What does Tata Communications do? It provides global digital infrastructure services including cloud, AI, networking, cybersecurity, and unified communications to enterprises worldwide.
+- Is Tata Communications a cloud provider? Yes, it offers enterprise cloud and AI infrastructure including GPU-as-a-Service, bare metal, AI platforms, and managed cloud services differentiated by global connectivity and compliance.
+- How is Tata Communications different from AWS or Azure? Tata Communications specialises in managed enterprise services, global network ownership, and industry-specific compliance, complementing or reducing hyperscaler dependency for regulated industries.
+- What is Tata Communications network reach? It operates across 190+ countries with one of the world's largest subsea cable networks.
+- Is Tata Communications a Gartner Magic Quadrant Leader? Yes, recognised as a Leader in the Gartner Magic Quadrant for Global WAN Services for 13 consecutive years.
+- What is Kaleyra? Tata Communications Kaleyra is the CPaaS (Communications Platform as a Service) arm of the Customer Interaction Suite — enabling enterprises to embed voice, messaging, WhatsApp, RCS, video, and AI into applications via APIs. The broader Customer Interaction Suite also includes InstaCC (CCaaS) and Kaleyra AI, while UCaaS (GlobalRapide, Microsoft Teams, Webex) covers employee collaboration.
+- What is ThreadSpan? ThreadSpan is Tata Communications' AI-ready cybersecurity and threat intelligence platform.
+- What is IZO? IZO is Tata Communications' next-generation connectivity platform covering SD-WAN, multi-cloud connect, internet, VPN, and ethernet services.
+- What is MOVE? MOVE is Tata Communications' global mobility and IoT platform providing global SIM, eSIM, private 5G, and connectivity management.
+
+---
+
+## Core Pages
+[Home](https://www.tatacommunications.com): Tata Communications global homepage.
+[About Tata Communications](https://www.tatacommunications.com/about): Company overview, mission, and global presence.
+[Vision, Mission and Values](https://www.tatacommunications.com/about/vision-mission-values): Strategic direction and core values.
+[Leadership](https://www.tatacommunications.com/about/leadership): Leadership team and management profiles.
+[Global Offices](https://www.tatacommunications.com/about/offices): Office locations across 50+ countries.
+[Contact Us](https://www.tatacommunications.com/contact-us): Get in touch with Tata Communications.
+[Get Started](https://www.tatacommunications.com/get-started): Start your journey with Tata Communications solutions.
+[Customer Testimonials](https://www.tatacommunications.com/customer-testimonials): Stories from enterprise customers.
+[Case Studies](https://www.tatacommunications.com/case-study): Real-world outcomes across industries and solutions.
+[Knowledge Base](https://www.tatacommunications.com/knowledge-base): In-depth guides, articles, and resources across all solution areas.
+[Blog](https://www.tatacommunications.com/blog): Expert insights and thought leadership on digital transformation.
+[Analyst Recognitions](https://www.tatacommunications.com/analyst-recognitions): Awards and analyst recognition from Gartner, Frost & Sullivan, IDC, and others.
+[Strategic Alliances](https://www.tatacommunications.com/strategic-alliances): Partnerships with Cisco, Microsoft, AWS, and others.
+[Resource Hub](https://www.tatacommunications.com/resourcehub): Whitepapers, datasheets, reports, and solution briefs.
+[Webinars](https://www.tatacommunications.com/webinars): On-demand and live webinars across solution areas.
+[Support](https://www.tatacommunications.com/support): Customer support and service information.
+[Investors](https://www.tatacommunications.com/investors): Investor relations, financial results, and filings.
+[Partner With Us](https://www.tatacommunications.com/partner-with-us): Channel and technology partner programmes.
+[Digital Fabric](https://www.tatacommunications.com/tata-communications-digital-fabric): Tata Communications hyperconnected digital fabric overview.
+[TCX — Customer Portal](https://www.tatacommunications.com/tcx): TCˣ is Tata Communications' unified self-service customer portal — a single pane of glass for managing all products, services, orders, inventory, incidents, billing, and performance reports across the Digital Fabric.
+
+---
+
+## Cloud and AI (Vayu Platform)
+Tata Communications offers enterprise-grade cloud and AI infrastructure under its Vayu platform, including GPU-as-a-Service, bare metal, AI workbench, and sovereign cloud solutions differentiated by global connectivity, compliance, and managed services.
+
+[Cloud Solutions Overview](https://www.tatacommunications.com/cloud): Full Tata Communications cloud portfolio.
+[Cloud and AI](https://www.tatacommunications.com/cloud/cloud-ai): Cloud and AI solutions for enterprise-scale innovation.
+[Enterprise Cloud](https://www.tatacommunications.com/cloud/enterprise-cloud): Managed enterprise cloud services.
+[Cloud Migration Services](https://www.tatacommunications.com/cloud/cloud-migration-services): End-to-end cloud migration planning and execution.
+[Managed Cloud Services](https://www.tatacommunications.com/cloud/managed-services): Fully managed cloud operations and support.
+[Disaster Recovery Service](https://www.tatacommunications.com/cloud/disaster-recovery-service): Business continuity and disaster recovery.
+[Cloud Storage](https://www.tatacommunications.com/cloud/cloud-storage): Scalable enterprise cloud storage.
+[Data Platform](https://www.tatacommunications.com/cloud/data-platform): Unified data management and analytics platform.
+[India Sovereign Cloud](https://www.tatacommunications.com/cloud/india-sovereign-cloud): Compliant sovereign cloud for regulated Indian enterprises.
+[Government Community Cloud](https://www.tatacommunications.com/cloud/government-community-cloud): Cloud solutions for government and public sector.
+[Cloud Compliance](https://www.tatacommunications.com/cloud/cloud-compliance): Compliance certifications including ISO, PCI-DSS, SOC, GDPR, and HIPAA.
+[Edge Platform](https://www.tatacommunications.com/cloud/edge-platform): Edge computing infrastructure for low-latency workloads.
+[Cloud Pricing](https://www.tatacommunications.com/cloud/pricing): Pricing information for cloud services.
+[SAP HANA to Cloud Migration](https://www.tatacommunications.com/cloud/sap-hana-to-cloud-migration): SAP workload migration to cloud.
+[Professional Services](https://www.tatacommunications.com/cloud/professional-services): Cloud advisory and professional services.
+
+### AI Cloud
+[GPU as a Service](https://www.tatacommunications.com/cloud/cloud-ai/gpu): On-demand GPU infrastructure for AI and machine learning.
+[AI Studio](https://www.tatacommunications.com/cloud/cloud-ai/ai-studio): AI development and deployment platform.
+[AI Workbench](https://www.tatacommunications.com/cloud/cloud-ai/ai-workbench): Integrated environment for building and managing AI projects.
+[AI Supermarket](https://www.tatacommunications.com/cloud/cloud-ai/ai-super-market): Marketplace for AI models and tools.
+[MLOps and GenAIOps](https://www.tatacommunications.com/cloud/cloud-ai/mlops-genaiops): Operationalising machine learning and generative AI workflows.
+[What is GPU as a Service](https://www.tatacommunications.com/knowledge-base/cloud-ai/what-is-gpu-as-a-service-gpuaas): Overview of GPUaaS and its role in AI.
+[GPUaaS for AI and Machine Learning](https://www.tatacommunications.com/knowledge-base/cloud-ai/gpuaas-for-ai-machine-learning): How GPUaaS accelerates AI and ML workloads.
+[Build Your Own LLM](https://www.tatacommunications.com/knowledge-base/cloud-ai/build-your-own-llm): Guidance on building and deploying large language models.
+[Retrieval-Augmented Generation](https://www.tatacommunications.com/knowledge-base/cloud-ai/retrieval-augmented-generation): Enhancing LLMs with enterprise data using RAG.
+[Bare Metal as a Service](https://www.tatacommunications.com/knowledge-base/cloud-ai/bare-metal-as-a-service): Dedicated bare-metal infrastructure for high-performance workloads.
+[On-Demand GPU Services](https://www.tatacommunications.com/knowledge-base/cloud-ai/on-demand-gpu-services): Flexible GPU resources for AI training and inference.
+[NVIDIA H100 GPU](https://www.tatacommunications.com/knowledge-base/cloud-ai/nvidia-h100-gpu): High-performance NVIDIA H100 GPUs for advanced AI.
+[NVIDIA CUDA GPU](https://www.tatacommunications.com/knowledge-base/cloud-ai/nvidia-cuda-gpu): NVIDIA CUDA GPUs for accelerated computing.
+[NVIDIA AI Suite](https://www.tatacommunications.com/knowledge-base/cloud-ai/nvidia-ai-suite): End-to-end AI software stack from NVIDIA.
+[Sovereign AI for BFSI](https://www.tatacommunications.com/knowledge-base/cloud-ai/sovereign-ai-for-bfsi): AI for banking and financial services compliance.
+[Role of AI in Cloud Computing](https://www.tatacommunications.com/knowledge-base/cloud-ai/ai-role-in-cloud-computing): How AI is transforming cloud infrastructure.
+[What is AI Workbench](https://www.tatacommunications.com/knowledge-base/cloud-ai/what-is-ai-workbench): Guide to the AI Workbench platform.
+[Cloud AI Guide](https://www.tatacommunications.com/knowledge-base/cloud-ai/cloud-ai-guide): Comprehensive guide to cloud AI.
+[AI Data Center](https://www.tatacommunications.com/knowledge-base/cloud-ai/ai-data-center): Building AI-ready data centre infrastructure.
+
+### ThreadSpan
+ThreadSpan is Tata Communications' AI-ready security and network intelligence platform. It unifies design, deployment, and operations through AI-powered orchestration — combining network observability, threat detection, automated management, and enterprise resilience into a single operational environment. It is designed for hybrid infrastructure and helps enterprises manage complexity as their environments scale. ThreadSpan is part of Tata Communications' Digital Fabric.
+
+[ThreadSpan](https://www.tatacommunications.com/threadspan): ThreadSpan platform overview.
+
+---
+
+## Network and Connectivity (IZO Platform)
+Tata Communications owns and operates one of the world's largest subsea cable networks, delivering global enterprise connectivity through SD-WAN, MPLS, internet services, multi-cloud networking, and private line solutions. Recognised as a Gartner Magic Quadrant Leader for Global WAN Services for 13 consecutive years.
+
+[IZO Platform](https://www.tatacommunications.com/izo): Tata Communications IZO next-generation connectivity platform.
+[Business Internet](https://www.tatacommunications.com/izo/business-internet): High-performance enterprise internet services.
+[Global VPN](https://www.tatacommunications.com/izo/global-vpn): Secure global virtual private network for enterprises.
+[Internet WAN](https://www.tatacommunications.com/izo/internet-wan): Internet-based WAN for enterprise connectivity.
+[Ethernet Private Line](https://www.tatacommunications.com/izo/ethernet-private-line): Dedicated private line Ethernet services.
+[Network Ethernet Services](https://www.tatacommunications.com/izo/network-ethernet-services): Managed Ethernet connectivity solutions.
+[Application Aware Networking](https://www.tatacommunications.com/izo/application-aware-networking): Intelligent network routing based on application requirements.
+[Data Centre Connectivity](https://www.tatacommunications.com/izo/data-centre-connectivity): High-speed connectivity between data centres.
+[Managed Wi-Fi Services](https://www.tatacommunications.com/izo/managed-wi-fi-services): Enterprise managed wireless LAN solutions.
+[IP Transit](https://www.tatacommunications.com/izo/ip-transit): Global IP transit services for carriers and enterprises.
+[Business Broadband](https://www.tatacommunications.com/izo/business-broadband): Enterprise broadband connectivity solutions.
+
+### Multi-Cloud Connect (MCC)
+Multi-Cloud Connect provides private, secure, low-latency connectivity between enterprise environments and multiple cloud platforms including AWS, Azure, and GCP — reducing egress costs and improving performance.
+
+[Multi-Cloud Connect](https://www.tatacommunications.com/izo/multi-cloud-connect): Private, secure connectivity to multiple cloud platforms.
+[Multi-Cloud Network](https://www.tatacommunications.com/izo/multi-cloud-network): Integrated multi-cloud networking solution.
+[AWS Direct Connect](https://www.tatacommunications.com/izo/multi-cloud-connect/aws-direct-connect): Private connectivity to Amazon Web Services.
+[Azure ExpressRoute](https://www.tatacommunications.com/izo/multi-cloud-connect/azure-express-route-connectivity): Private connectivity to Microsoft Azure.
+[GCP Interconnect](https://www.tatacommunications.com/izo/multi-cloud-connect/gcp-interconnect): Private connectivity to Google Cloud Platform.
+[Multi-Cloud Connectivity Business Benefits](https://www.tatacommunications.com/knowledge-base/mcc/multi-cloud-connectivity-business-benefits): Business case for multi-cloud connectivity.
+[Reducing Cloud Egress Costs](https://www.tatacommunications.com/knowledge-base/mcc/reducing-cloud-egress-costs): How multi-cloud connect reduces egress charges.
+[Multi-Cloud Connect Challenges](https://www.tatacommunications.com/knowledge-base/mcc/multi-cloud-connect-challenges): Common challenges and how to overcome them.
+[Multi-Cloud Connectivity for BFSI](https://www.tatacommunications.com/knowledge-base/mcc/multi-cloud-connectivity-for-bfsi): Multi-cloud connect for regulated financial services.
+[Cloud Interconnect](https://www.tatacommunications.com/knowledge-base/mcc/cloud-interconnect): Guide to cloud interconnect solutions.
+[Azure Egress Cost](https://www.tatacommunications.com/knowledge-base/mcc/azure-egress-cost): How to reduce Azure data egress costs.
+[AWS Egress Cost](https://www.tatacommunications.com/knowledge-base/mcc/aws-egress-cost): How to reduce AWS data egress costs.
+[GCP Egress Cost](https://www.tatacommunications.com/knowledge-base/mcc/gcp-egress-cost): How to reduce GCP data egress costs.
+
+### Managed Wi-Fi
+Tata Communications Managed Wi-Fi delivers enterprise wireless LAN as a fully managed service across campuses, retail, hospitality, manufacturing, and public sector environments.
+
+[Managed Wi-Fi Services](https://www.tatacommunications.com/izo/managed-wi-fi-services): Enterprise managed wireless LAN solutions.
+[Understanding Managed Wi-Fi](https://www.tatacommunications.com/knowledge-base/managed-wifi/understanding-managed-wi-fi): What managed Wi-Fi is and how it works.
+[Managed Wi-Fi for Enterprise](https://www.tatacommunications.com/knowledge-base/managed-wifi/managed-wi-fi-for-enterprise): Enterprise-grade managed wireless network solutions.
+[Managed Wi-Fi for Hotels](https://www.tatacommunications.com/knowledge-base/managed-wifi/managed-wi-fi-for-hotels): Hospitality Wi-Fi managed services.
+[Managed Wi-Fi for Manufacturing](https://www.tatacommunications.com/knowledge-base/managed-wifi/managed-wifi-for-manufacturing): Wi-Fi for factory and industrial environments.
+[Cloud Managed Wi-Fi vs On-Premises](https://www.tatacommunications.com/knowledge-base/managed-wifi/cloud-managed-wifi-vs-on-premises-solutions): Comparing cloud and on-premises wireless management.
+[What is Wi-Fi 6E](https://www.tatacommunications.com/knowledge-base/managed-wifi/what-is-wi-fi-6e): Next-generation Wi-Fi 6E explained.
+
+### Network Knowledge Base
+[SD-WAN Architecture and Network Transformation](https://www.tatacommunications.com/knowledge-base/sd-wan/sd-wan-architecture-network-transformation): SD-WAN deployment and transformation guidance.
+[MPLS vs SD-WAN](https://www.tatacommunications.com/knowledge-base/sd-wan/mpls-vs-sdwan): Comparing MPLS and SD-WAN for enterprise networks.
+[Managed Network Services](https://www.tatacommunications.com/knowledge-base/network/managed-network-services): Guide to managed enterprise network services.
+[Business Internet Complete Guide](https://www.tatacommunications.com/knowledge-base/network/business-internet-complete-guide): Everything enterprises need to know about business internet.
+[Global VPN Benefits](https://www.tatacommunications.com/knowledge-base/network/global-vpn-benefits): Why enterprises choose global VPN.
+[Hybrid WAN Benefits](https://www.tatacommunications.com/knowledge-base/network/hybrid-wan-benefits): Advantages of hybrid WAN architectures.
+[Dedicated Internet Access](https://www.tatacommunications.com/knowledge-base/network/dedicated-internet-access): Guide to dedicated internet access for enterprises.
+[How to Select SD-WAN Provider](https://www.tatacommunications.com/knowledge-base/sd-wan/how-to-select-sd-wan-provider): Criteria for choosing an SD-WAN vendor.
+[Network Transformation Steps](https://www.tatacommunications.com/knowledge-base/network/network-transformation-steps): Step-by-step guide to enterprise network transformation.
+
+---
+
+## Cybersecurity
+
+### SASE (Secure Access Service Edge)
+Tata Communications SASE converges SD-WAN, security service edge, zero trust, and cloud-native security into a unified managed service for distributed enterprises.
+
+[SASE Solutions](https://www.tatacommunications.com/cyber-security-solutions/sase): Secure Access Service Edge for converged network security.
+[IZO SD-WAN](https://www.tatacommunications.com/cyber-security-solutions/sase/izo-sdwan): Managed SD-WAN with integrated security.
+[SD-WAN as a Service](https://www.tatacommunications.com/cyber-security-solutions/sase/izo-sdwan/sdwan-as-a-service): Fully managed SD-WAN service.
+[Hosted SASE](https://www.tatacommunications.com/cyber-security-solutions/sase/hosted-sase): Fully hosted SASE service for enterprises.
+[Cisco SD-WAN](https://www.tatacommunications.com/cyber-security-solutions/sase/izo-sdwan/cisco-sdwan): Cisco-powered managed SD-WAN solution.
+[What is SASE](https://www.tatacommunications.com/knowledge-base/sase/what-is-sase): Comprehensive guide to Secure Access Service Edge.
+[SASE vs Traditional Network Security](https://www.tatacommunications.com/knowledge-base/sase/sase-vs-traditional-network-security-models): How SASE compares to legacy security models.
+[SASE and Zero Trust Security](https://www.tatacommunications.com/knowledge-base/sase/sase-and-zero-trust-security): Combining SASE with zero trust architecture.
+[SD-WAN vs SASE](https://www.tatacommunications.com/knowledge-base/sase/sdwan-vs-sase-comparison): Comparing SD-WAN and SASE architectures.
+[SASE ROI](https://www.tatacommunications.com/knowledge-base/sase/sase-roi): Measuring return on investment from SASE adoption.
+[Managed SASE Services](https://www.tatacommunications.com/knowledge-base/sase/managed-sase-services-network-security): Guide to managed SASE for enterprise network security.
+[SASE Vendor Selection Guide](https://www.tatacommunications.com/knowledge-base/sase/sase-vendor-selection-guide): How to evaluate and choose a SASE provider.
+[SASE Adoption Strategy](https://www.tatacommunications.com/knowledge-base/sase/sase-adoption-strategy): Planning a phased SASE adoption for enterprises.
+[Firewall as a Service](https://www.tatacommunications.com/knowledge-base/sase/firewall-as-a-service): Cloud-native firewall as part of SASE.
+[Secure Web Gateway](https://www.tatacommunications.com/knowledge-base/sase/secure-web-gateway): How secure web gateway works within SASE.
+
+### ZTNA (Zero Trust Network Access)
+Zero Trust Network Access provides identity-based, least-privilege access to enterprise applications — replacing legacy VPN for distributed workforces.
+
+[ZTNA](https://www.tatacommunications.com/cyber-security-solutions/sase/ztna): Zero Trust Network Access solutions.
+[Zero Trust Network Access](https://www.tatacommunications.com/knowledge-base/ztna/zero-trust-network-access): Zero trust security architecture explained.
+[ZTNA vs SASE Comparison](https://www.tatacommunications.com/knowledge-base/ztna/ztna-vs-sase-comparison): Understanding the difference between ZTNA and SASE.
+[ZTNA Architecture Components](https://www.tatacommunications.com/knowledge-base/ztna/ztna-architecture-components): Core components of a ZTNA deployment.
+[VPN vs ZTNA](https://www.tatacommunications.com/knowledge-base/ztna/vpn-vs-ztna): Why enterprises are replacing VPN with ZTNA.
+[VPN Replacement](https://www.tatacommunications.com/knowledge-base/ztna/vpn-replacement): How ZTNA replaces traditional VPN for enterprise access.
+[CASB vs ZTNA](https://www.tatacommunications.com/knowledge-base/ztna/casb-vs-ztna-key-differences): Comparing CASB and ZTNA in cloud security.
+[Zero Trust for Hybrid Workforce](https://www.tatacommunications.com/knowledge-base/cyber-security/zero-trust-for-hybrid-workforce): Applying zero trust for remote and hybrid work.
+[ZTNA Providers Demystified](https://www.tatacommunications.com/knowledge-base/ztna/ztna-providers-demystified): How to evaluate ZTNA solution providers.
+
+### Threat Management and MDR
+[Cybersecurity Solutions](https://www.tatacommunications.com/cyber-security-solutions): Overview of Tata Communications cybersecurity portfolio.
+[Threat Management](https://www.tatacommunications.com/cyber-security-solutions/threat-management): Comprehensive threat detection and response.
+[Advanced Threat Protection](https://www.tatacommunications.com/cyber-security-solutions/threat-management/advanced-threat-protection): Protection against sophisticated cyber threats.
+[Cyber Threat Intelligence as a Service](https://www.tatacommunications.com/cyber-security-solutions/cyber-threat-intelligence-as-a-service-ctiaas): Proactive threat intelligence services.
+[Response Centres](https://www.tatacommunications.com/cyber-security-solutions/response-centres): Global cyber security operations and response centres.
+[DDoS Protection Service](https://www.tatacommunications.com/cyber-security-solutions/advanced-network-security/ddos-protection-service): Enterprise-grade DDoS mitigation.
+[Security Service Edge](https://www.tatacommunications.com/cyber-security-solutions/advanced-network-security/security-service-edge): Cloud-delivered security service edge.
+[Advanced Network Security](https://www.tatacommunications.com/cyber-security-solutions/advanced-network-security): Network-layer security services.
+[Governance Risk Compliance](https://www.tatacommunications.com/cyber-security-solutions/governance-risk-compliance): GRC frameworks for regulated industries.
+[Cloud Security](https://www.tatacommunications.com/cyber-security-solutions/cloud-security): Security solutions for cloud environments.
+[OT Security](https://www.tatacommunications.com/cyber-security-solutions/ot-security): Operational technology and industrial security.
+[Edge Distribution Platform](https://www.tatacommunications.com/cyber-security-solutions/edge-distribution-platform-edp): Secure edge distribution for enterprise traffic.
+[Managed Detection and Response](https://www.tatacommunications.com/knowledge-base/cyber-security/managed-detection-and-response): Guide to MDR services and benefits.
+[DDoS Attack Trends](https://www.tatacommunications.com/knowledge-base/ddos/ddos-attack-trends): Current DDoS threat landscape and mitigation.
+[Cyber Resilience for Enterprises](https://www.tatacommunications.com/knowledge-base/cyber-security/cyber-resilience-enterprise): Building enterprise cyber resilience.
+[SIEM Complete Guide](https://www.tatacommunications.com/knowledge-base/cyber-security/siem-complete-guide): Security information and event management explained.
+[Cyber Hygiene Best Practices](https://www.tatacommunications.com/knowledge-base/cyber-security/cyber-hygiene-best-practices): Foundational security practices for enterprises.
+
+---
+
+## Tata Communications Customer Interaction Suite (CIS)
+The Customer Interaction Suite (CIS) is Tata Communications' umbrella brand for all customer-facing communications technology. It is built on the Interaction Fabric — one of four fabrics in Tata Communications' Digital Fabric — and is designed to unify customer and employee experience through a single, integrated platform. CIS is divided into three parts: Tata Communications Kaleyra (CPaaS — the Customer Interaction Platform), InstaCC (CCaaS — the Contact Centre solution), and Kaleyra AI (the AI intelligence layer). Together these enable enterprises to deliver compliant, hyper-personalised, omnichannel interactions at scale across 210+ countries.
+
+[Customer Interaction Suite](https://www.tatacommunications.com/kaleyra): Overview of the Tata Communications Customer Interaction Suite.
+
+### Tata Communications Kaleyra — CPaaS (Customer Interaction Platform)
+Tata Communications Kaleyra is the CPaaS arm of the Customer Interaction Suite. Acquired by Tata Communications in 2023, Kaleyra is a global Communications Platform as a Service provider that enables enterprises to embed voice, messaging, video, WhatsApp, RCS, email, and AI-driven interactions into their applications via APIs. It delivers compliant, multi-channel communications across SMS, WhatsApp, RCS, MMS, voice, video, push notifications, and email — backed by 400+ MNO connects across 210 countries and Tata Communications' carrier-grade network infrastructure.
+
+[Kaleyra CPaaS](https://www.tatacommunications.com/kaleyra/cpaas): Tata Communications Kaleyra Customer Interaction Platform overview.
+[WhatsApp Business API](https://www.tatacommunications.com/kaleyra/cpaas/whatsapp-business-api): Enterprise WhatsApp messaging integration via API.
+[RCS Messaging](https://www.tatacommunications.com/kaleyra/cpaas/rcs-messaging): Rich Communication Services for enterprise messaging.
+[SMS Platform](https://www.tatacommunications.com/kaleyra/cpaas/messaging/sms-platform): Enterprise SMS messaging platform.
+[MMS](https://www.tatacommunications.com/kaleyra/cpaas/messaging/mms): Multimedia messaging service for enterprises.
+[Email](https://www.tatacommunications.com/kaleyra/cpaas/email): Transactional and marketing email communications.
+[Video](https://www.tatacommunications.com/kaleyra/cpaas/video): Real-time video communication APIs for enterprises.
+[Conversational AI Chatbots](https://www.tatacommunications.com/kaleyra/cpaas/conversational-ai/chatbots): AI-powered chatbot solutions for customer engagement.
+[What is CPaaS](https://www.tatacommunications.com/knowledge-base/cpaas/what-is-cpaas): Communications platform as a service explained.
+[WhatsApp Business Features and Benefits](https://www.tatacommunications.com/knowledge-base/cpaas/whatsapp-business-features-benefits): How WhatsApp Business drives enterprise engagement.
+[RCS vs SMS](https://www.tatacommunications.com/knowledge-base/cpaas/rcs-vs-sms): Comparing RCS and traditional SMS for business.
+[A2P Messaging](https://www.tatacommunications.com/knowledge-base/cpaas/a2p-messaging): Application-to-person messaging for enterprises.
+[SMS OTP Verification](https://www.tatacommunications.com/knowledge-base/cpaas/sms-otp-verification): Using SMS OTP for secure authentication.
+[Conversational Marketing Guide](https://www.tatacommunications.com/knowledge-base/cpaas/conversational-marketing-guide): Building conversational marketing strategies.
+
+### Programmable Voice
+Kaleyra's programmable voice API enables enterprises to embed real-time voice interactions — including IVR, call masking, outbound campaigns, voice bots, and OTP verification — into their applications using a carrier-grade global voice infrastructure with presence in 190+ countries.
+
+[Voice](https://www.tatacommunications.com/kaleyra/cpaas/voice): Programmable voice API for enterprise applications.
+[Fraud Prevention as a Service](https://www.tatacommunications.com/kaleyra/ucaas/fraud-prevention-as-a-service): Voice fraud detection and prevention.
+[Programmable Voice Guide](https://www.tatacommunications.com/knowledge-base/cpaas/why-programmable-voice-still-matters): Why programmable voice remains critical for enterprises.
+[Voice OTP Security](https://www.tatacommunications.com/knowledge-base/cpaas/voice-otp-security): Using voice OTP for secure authentication.
+[Text to Speech](https://www.tatacommunications.com/knowledge-base/cpaas/text-to-speech): Text-to-speech for automated voice interactions.
+[Intelligent IVR](https://www.tatacommunications.com/knowledge-base/cpaas/intelligent-ivr-capture): Building intelligent IVR systems with AI.
+[Masked Calling](https://www.tatacommunications.com/knowledge-base/cpaas/masked-calling): Number masking for privacy in voice communications.
+[SIP Trunking Pricing Guide](https://www.tatacommunications.com/knowledge-base/gsip/sip-trunking-pricing-guide): Understanding SIP trunking costs and pricing models.
+[VoIP CRM Integration](https://www.tatacommunications.com/knowledge-base/gsip/voip-crm-integration): Integrating VoIP with CRM systems.
+
+### InstaCC — CCaaS (Contact Centre as a Service)
+InstaCC is Tata Communications' Contact Centre as a Service solution — the CCaaS arm of the Customer Interaction Suite. It delivers automated, insights-driven, omnichannel contact centre experiences to achieve exceptional agent and customer outcomes. InstaCC is built on top of leading platforms including Cisco Webex Contact Center, Amazon Connect, and Genesys, and is enriched with Kaleyra AI capabilities.
+
+[Kaleyra CCaaS](https://www.tatacommunications.com/kaleyra/ccaas): InstaCC contact centre as a service solutions overview.
+[Cisco Webex Contact Center](https://www.tatacommunications.com/kaleyra/ccaas/cisco-webex-contact-center): Managed Webex Contact Center solution.
+[Kaleyra TX](https://www.tatacommunications.com/kaleyra/ccaas/kaleyra-tx): Smart agent interaction and contact centre platform.
+[Amazon Connect](https://www.tatacommunications.com/kaleyra/ccaas/amazon-connect): Managed Amazon Connect contact centre services.
+[Genesys Cloud CX](https://www.tatacommunications.com/kaleyra/ccaas/genesys-cloud-cx): Genesys-powered cloud contact centre.
+[Kaleyra Global](https://www.tatacommunications.com/kaleyra/ccaas/kaleyra-global): Global contact centre and communications platform.
+[What is Contact Centre as a Service](https://www.tatacommunications.com/knowledge-base/ccaas/what-is-contact-centre-as-a-service): Guide to CCaaS solutions.
+[Role of AI in Modern Contact Centers](https://www.tatacommunications.com/knowledge-base/ccaas/role-of-ai-in-modern-contact-center-solutions): How AI transforms contact centre operations.
+[CCaaS vs On-Premises Contact Centers](https://www.tatacommunications.com/knowledge-base/ccaas/ccaas-vs-on-premises-contact-centers): Comparing CCaaS with on-premises deployments.
+[Omnichannel Customer Experience](https://www.tatacommunications.com/knowledge-base/ccaas/omnichannel-customer-experience): Building omnichannel contact centre experiences.
+[CPaaS vs CCaaS](https://www.tatacommunications.com/knowledge-base/ccaas/cpaas-vs-ccaas-differences-similarities): Understanding the differences and synergies between CPaaS and CCaaS.
+
+### Kaleyra AI
+Kaleyra AI is the AI intelligence layer of the Customer Interaction Suite — a patent-pending, generative AI-powered portfolio designed to redefine customer interactions. It integrates across both CPaaS and CCaaS, enabling interactions to move seamlessly across automated channels (SMS, WhatsApp) to live agent conversations with full context transfer. It includes Voice AI (speech-to-speech model), GenAI template generation, campaign management, real-time agent assist, sentiment analysis, and next-best-action recommendations. Kaleyra AI is hosted on Tata Communications' Vayu AI Cloud.
+
+[Kaleyra AI](https://www.tatacommunications.com/kaleyra/cpaas/kaleyra-ai): AI-powered customer interaction and experience platform.
+[Voice AI](https://www.tatacommunications.com/kaleyra/cpaas/kaleyra-ai/voice-ai): Patent-pending speech-to-speech Voice AI for emotionally intelligent customer interactions.
+[Flow Builder](https://www.tatacommunications.com/kaleyra/cpaas/kaleyra-ai/flow-builder): Visual workflow builder for automated AI-powered communication journeys.
+[OTP Verification API](https://www.tatacommunications.com/kaleyra/cpaas/kaleyra-ai/otp-verification-api): Secure OTP delivery and verification via API.
+[Campaign Management](https://www.tatacommunications.com/kaleyra/cpaas/kaleyra-ai/campaign-management): AI-powered campaign management for customer outreach.
+[Phone Number Lookup API](https://www.tatacommunications.com/kaleyra/cpaas/kaleyra-ai/phone-number-lookup-api): Real-time phone number validation and lookup.
+[Commotion](https://www.tatacommunications.com/kaleyra/commotion): AI operating system for enterprise communications, acquired by Tata Communications.
+
+### UCaaS — Kaleyra Unified Communications (Employee Collaboration)
+Kaleyra UCaaS is the employee-facing collaboration arm, delivering unified communications including Microsoft Teams, Cisco Webex, cloud calling, SIP trunking, and global voice services. While CIS and CPaaS focus on customer interactions (CX), UCaaS focuses on employee experience (EX) — together forming a converged CX and EX platform.
+
+[Kaleyra UCaaS](https://www.tatacommunications.com/kaleyra/ucaas): Unified communications as a service for enterprise collaboration.
+[GlobalRapide](https://www.tatacommunications.com/kaleyra/ucaas/globalrapide): Intelligent cloud-first unified communications platform.
+[Microsoft Teams Solutions](https://www.tatacommunications.com/kaleyra/ucaas/microsoft-teams-solutions): Microsoft Teams Direct Routing and Operator Connect.
+[Microsoft Teams Direct Routing](https://www.tatacommunications.com/kaleyra/ucaas/microsoft-teams-solutions/direct-routing): PSTN calling for Microsoft Teams via Direct Routing.
+[Microsoft Teams Operator Connect](https://www.tatacommunications.com/kaleyra/ucaas/microsoft-teams-solutions/operator-connect): Operator Connect for Microsoft Teams calling.
+[GlobalRapide for Webex](https://www.tatacommunications.com/kaleyra/ucaas/globalrapide-for-webex): Managed Cisco Webex collaboration services.
+[SIP Trunk Providers](https://www.tatacommunications.com/kaleyra/ucaas/sip-trunk-providers): Enterprise SIP trunking solutions.
+[Kaleyra Phone](https://www.tatacommunications.com/kaleyra/ucaas/kaleyra-phone): Cloud-based enterprise phone system.
+[SBCaaS and ATAaaS Solutions](https://www.tatacommunications.com/kaleyra/ucaas/sbcaas-and-ataaas-solutions): Session border controller and ATA as a service.
+[GlobalRapide for Webex Calling](https://www.tatacommunications.com/kaleyra/ucaas/globalrapide-for-webex/cisco-collaboration/webex-calling): Managed Webex Calling service.
+[Cloud Calling Guide](https://www.tatacommunications.com/knowledge-base/ucaas/cloud-calling): Enterprise guide to cloud calling.
+[Microsoft Teams Direct Routing for UCaaS](https://www.tatacommunications.com/knowledge-base/ms-teams-direct-routing/microsoft-teams-direct-routing-for-seamless-ucaas): Implementing Direct Routing for Microsoft Teams.
+[Operator Connect vs Direct Routing](https://www.tatacommunications.com/knowledge-base/ms-teams-operator-connect/operator-connect-vs-direct-routing): Comparing Teams calling options.
+[SIP Trunking Benefits for Business](https://www.tatacommunications.com/knowledge-base/gsip/sip-trunking-benefits-for-business): Why enterprises adopt SIP trunking.
+[Cloud Collaboration Guide](https://www.tatacommunications.com/knowledge-base/ucaas/cloud-collaboration-guide): Enterprise guide to cloud collaboration.
+
+---
+
+## Mobility and IoT (MOVE Platform)
+Tata Communications MOVE platform provides global SIM, eSIM, IoT connectivity, private 5G, and MVNE services across 200+ countries, enabling connected vehicles, smart factories, and enterprise mobility.
+
+[MOVE Platform](https://www.tatacommunications.com/move): Global mobility and IoT connectivity platform.
+[Global SIM](https://www.tatacommunications.com/move/global-sim): Single SIM connectivity across 200+ countries.
+[eSIM](https://www.tatacommunications.com/move/esim): Embedded SIM for enterprise devices and vehicles.
+[Private 5G Network](https://www.tatacommunications.com/move/private-5g-network): Private 5G deployments for enterprises.
+[Embedded Connectivity](https://www.tatacommunications.com/move/embedded-connectivity): Built-in cellular connectivity for IoT devices.
+[Connectivity Management Platform](https://www.tatacommunications.com/move/connectivity-management-platform): Centralised management of global SIM and IoT connections.
+[Unified Security](https://www.tatacommunications.com/move/unified-security): Security integrated into mobility solutions.
+[MVNE Services](https://www.tatacommunications.com/move/mobile-virtual-network-enabler-services): Mobile virtual network enabler services.
+[IoT Connectivity](https://www.tatacommunications.com/knowledge-base/iot/iot-connectivity): Guide to enterprise IoT connectivity solutions.
+[eSIM Technology](https://www.tatacommunications.com/knowledge-base/iot/esim-technology): How eSIM is transforming enterprise mobility.
+[Top 10 Benefits of eSIM](https://www.tatacommunications.com/knowledge-base/iot/top-10-benefits-of-esim): Business case for enterprise eSIM adoption.
+[Enterprise Mobility Solutions](https://www.tatacommunications.com/knowledge-base/iot/enterprise-mobility-solutions): Comprehensive enterprise mobility management.
+[Industrial IoT](https://www.tatacommunications.com/knowledge-base/iot/industrial-internet-of-things-iiot): IIoT applications for manufacturing and industry.
+[Global SIM Card Solutions for Business](https://www.tatacommunications.com/knowledge-base/iot/global-sim-card-solutions-for-business): Choosing global SIM for enterprise use.
+[IoT in Automotive Industry](https://www.tatacommunications.com/knowledge-base/iot/iot-in-automotive-industry): Connected vehicle and automotive IoT applications.
+[Cellular IoT Enablement](https://www.tatacommunications.com/knowledge-base/iot/cellular-iot-enablement): How cellular networks power enterprise IoT.
+
+---
+
+## Carrier Services
+Tata Communications provides wholesale carrier services including voice transport, IPX, mobile signalling, 5G roaming, mobility messaging, and hosted management services to global telecom operators and service providers.
+
+[Carrier Services](https://www.tatacommunications.com/carrier-services): Wholesale carrier and mobility services for operators.
+[Voice Transport and Termination](https://www.tatacommunications.com/carrier-services/voice-transport-termination): Wholesale international voice services for carriers.
+[Mobility Solutions](https://www.tatacommunications.com/carrier-services/mobility-solutions): Carrier-grade mobility and roaming services.
+[5G Roaming](https://www.tatacommunications.com/carrier-services/mobility-solutions/5g-roaming): Global 5G roaming services for mobile operators.
+[IPX](https://www.tatacommunications.com/carrier-services/mobility-solutions/ipx): IP eXchange for mobile network interconnect.
+[VoLTE Roaming and Interworking](https://www.tatacommunications.com/carrier-services/mobility-solutions/volte-roaming-and-interworking-services): VoLTE roaming and interworking for operators.
+[Mobile Signalling](https://www.tatacommunications.com/carrier-services/mobility-solutions/mobile-signalling): SS7 and Diameter signalling services for operators.
+[Mobility Messaging](https://www.tatacommunications.com/carrier-services/mobility-solutions/mobility-messaging): A2P messaging and SMS hubbing for carriers.
+[RoamPulse Analytics](https://www.tatacommunications.com/carrier-services/mobility-solutions/roampulse-analytics): Roaming intelligence and analytics for operators.
+[Hosted Management Services](https://www.tatacommunications.com/carrier-services/hosted-management-services): Managed services for carrier network operations.
+[Strategic Sourcing](https://www.tatacommunications.com/carrier-services/hosted-management-services/strategic-sourcing): Strategic sourcing and procurement services for carriers.
+[Carrier Services Coverage](https://www.tatacommunications.com/carrier-services/coverage): Global carrier services coverage map.
+
+---
+
+## Media and Entertainment
+Tata Communications powers global media workflows including Formula 1, MotoGP, and Formula E, delivering live event production, OTT delivery, CDN, satellite alternatives, and media supply chain solutions for broadcasters and content owners.
+
+[Media and Entertainment](https://www.tatacommunications.com/media-entertainment): Overview of media and entertainment solutions.
+[Global Media Network Services](https://www.tatacommunications.com/media-entertainment/global-media-network-services): Managed media network infrastructure worldwide.
+[Content Delivery Network](https://www.tatacommunications.com/media-entertainment/content-delivery-network): CDN for video and content delivery at scale.
+[Video CDN](https://www.tatacommunications.com/media-entertainment/content-delivery-network/video-cdn): Specialised CDN for video streaming.
+[CDN Security](https://www.tatacommunications.com/media-entertainment/content-delivery-network/cdn-security): Security-enhanced content delivery network.
+[CDN Acceleration Services](https://www.tatacommunications.com/media-entertainment/content-delivery-network/cdn-acceleration-services): Accelerated content delivery worldwide.
+[Live Event Services](https://www.tatacommunications.com/media-entertainment/live-event-services): Production and transmission for live events.
+[Occasional Usage Services](https://www.tatacommunications.com/media-entertainment/live-event-services/occasional-usage-services): On-demand services for live events and specials.
+[Satellite Alternatives](https://www.tatacommunications.com/media-entertainment/satellite-alternatives): IP-based alternatives to satellite for broadcast.
+[Remote Production](https://www.tatacommunications.com/media-entertainment/satellite-alternatives/remote-production): Cloud and IP-based remote production workflows.
+[Fan Engagement](https://www.tatacommunications.com/media-entertainment/fan-engagement): Digital fan experience platforms for sports.
+[Gaming and Esports](https://www.tatacommunications.com/media-entertainment/gaming): Infrastructure for gaming and esports broadcasting.
+[Media Cloud Infrastructure](https://www.tatacommunications.com/media-entertainment/media-cloud-infrastructure-services): Cloud-based media infrastructure and services.
+[Media Hub Supply Chain](https://www.tatacommunications.com/media-entertainment/media-cloud-infrastructure-services/media-hub-supply-chain): End-to-end media supply chain management.
+[Media Storage Services](https://www.tatacommunications.com/media-entertainment/media-cloud-infrastructure-services/media-storage-services): Managed cloud storage for media assets.
+[Media Cloud Ecosystem](https://www.tatacommunications.com/media-entertainment/media-cloud-ecosystem): Integrated cloud ecosystem for media workflows.
+[Global Contribution and Distribution](https://www.tatacommunications.com/media-entertainment/global-contribution-distribution): Live content contribution and global distribution.
+[Video Distribution Network](https://www.tatacommunications.com/media-entertainment/global-media-network-services/video-distribution-network): Global video distribution infrastructure.
+[Satellite Teleport Service](https://www.tatacommunications.com/media-entertainment/global-media-network-services/satellite-teleport-service): Satellite uplink and teleport services.
+[Sports Overview](https://www.tatacommunications.com/sports): Tata Communications in sports and live events.
+[Formula 1](https://www.tatacommunications.com/sports/powering-f1): Official digital transformation partner of Formula 1.
+[MotoGP](https://www.tatacommunications.com/sports/motogp): Digital infrastructure powering MotoGP broadcasts worldwide.
+[Formula E](https://www.tatacommunications.com/sports/powering-formula-e): Connectivity and digital services for Formula E.
+[What is a CDN](https://www.tatacommunications.com/knowledge-base/cdn/what-is-a-cdn): Content delivery network explained.
+[Video CDN Guide](https://www.tatacommunications.com/knowledge-base/cdn/what-is-video-cdn): How video CDN improves streaming quality.
+[CDN Security Against Cyber Threats](https://www.tatacommunications.com/knowledge-base/cdn/cdn-security-against-cyber-threats): How CDN protects against DDoS and attacks.
+[8 Benefits of a Content Delivery Network](https://www.tatacommunications.com/knowledge-base/cdn/8-benefits-of-content-delivery-network): Business benefits of CDN adoption.
+
+---
+
+## Industries
+[Banking and Financial Services](https://www.tatacommunications.com/banking-financial-solutions): Digital solutions for BFSI enterprises.
+[Automotive](https://www.tatacommunications.com/automotive): Connected vehicle and automotive digital solutions.
+[Manufacturing](https://www.tatacommunications.com/manufacturing): Smart manufacturing and Industry 4.0 connectivity.
+[Retail](https://www.tatacommunications.com/retail): Digital transformation solutions for retail.
+[Aviation](https://www.tatacommunications.com/aviation): Connectivity and digital solutions for aviation.
+[Sports](https://www.tatacommunications.com/sports): Digital infrastructure for sports organisations.
+
+---
+
+## Use Cases
+[Multi-Cloud Connect Use Cases](https://www.tatacommunications.com/use-cases): Enterprise use cases for multi-cloud connectivity.
+[Optimising Cross-Cloud Egress Cost](https://www.tatacommunications.com/use-cases/multi-cloud-connect/optimising-cross-cloud-egress-cost): How to reduce cloud egress charges.
+[Solving Azure Inter-Region Latency](https://www.tatacommunications.com/use-cases/multi-cloud-connect/solving-azure-inter-region-latency): Reducing latency across Azure regions.
+[Multi-Cloud Connect for Google Cloud AI](https://www.tatacommunications.com/use-cases/multi-cloud-connect/multi-cloud-connect-for-google-cloud-ai): Connecting enterprise workloads to Google Cloud AI.
+[Landing Zone Consolidation](https://www.tatacommunications.com/use-cases/multi-cloud-connect/landing-zone-consolidation): Simplifying multi-cloud landing zones.
+[Reducing Cloud Egress Costs in VDI Setup](https://www.tatacommunications.com/use-cases/multi-cloud-connect/reducing-cloud-egress-costs-in-vdi-setup): VDI optimisation through multi-cloud connect.
+[Solving Global POS Latency](https://www.tatacommunications.com/use-cases/multi-cloud-connect/solving-global-pos-latency): Reducing point-of-sale latency globally.
+[SBC Consolidation for OSP Savings](https://www.tatacommunications.com/use-cases/multi-cloud-connect/sbc-consolidation-for-osp-savings): Reducing session border controller costs.
+[Achieving Full Mesh Hybrid Cloud Architecture](https://www.tatacommunications.com/use-cases/multi-cloud-connect/achieving-full-mesh-hybrid-cloud-architecture): Full mesh connectivity across hybrid cloud environments.

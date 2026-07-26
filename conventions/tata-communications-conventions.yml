@@ -1,0 +1,100 @@
+generated: '2026-07-25'
+method: derived
+source: openapi/*.json; https://developer.tatacommunications.com/; https://tatacommunicationsdigo.io/documentation-api/
+notes: >-
+  Cross-cutting request/response semantics for the Tata Communications APIs that are
+  anonymously readable. Derived from the three published Swagger 2.0 documents and the
+  provider's own product documentation. Tata Communications publishes no API design guide,
+  so there is no stated convention to compare against — everything here is observed.
+authentication:
+  style: header token
+  detail: >-
+    An opaque "Authorization" header on the Akana portal APIs plus an "appid" application
+    identifier header on Mobile Messaging Exchange; OAuth 2.0 bearer on MOVE via a separate
+    Access Token API; a sales-issued auth token on DIGO.
+  artifact: authentication/tata-communications-authentication.yml
+idempotency:
+  supported: false
+  header: null
+  note: >-
+    No idempotency key header, parameter, or retry-safety contract appears in any published
+    Tata Communications specification or documentation. The one write operation that is
+    anonymously readable (postsenderId, sender-ID whitelisting) documents no de-duplication
+    behaviour. No Idempotency pointer is emitted.
+pagination:
+  style: offset
+  params:
+  - name: pageNo
+    type: number
+    description: Page number to retrieve
+    operations:
+    - top_25_cdr
+    - numberLookupRecords
+  - name: pageSize
+    type: number
+    description: Number of records per page
+    operations:
+    - top_25_cdr
+    - numberLookupRecords
+  response_fields:
+  - name: totalItems
+    description: Total number of items available
+    schema: OutputList
+  - name: displayItems
+    description: Number of items returned in this page
+    schema: OutputList
+  - name: totalRecords
+    description: Total number of records for the user (Number Intelligence /records)
+  note: >-
+    Offset pagination is consistent across both reporting APIs but no default page size,
+    maximum page size, or link header is documented.
+filtering:
+  params:
+  - name: fromDate
+    operations: [top_25_cdr]
+    description: Start of the reporting window
+  - name: toDate
+    operations: [top_25_cdr]
+    description: End of the reporting window
+  - name: accountId
+    operations: [top_25_cdr, getdestination, getreport]
+    description: Customer account id assigned at onboarding
+  - name: mcc
+    operations: [getdestination, postsenderId]
+  - name: mnc
+    operations: [getdestination, postsenderId]
+field_expansion:
+  supported: false
+metadata:
+  supported: false
+request_tracing:
+  request_id_header: null
+  note: >-
+    No request-id or correlation-id header is documented. The CDR response does carry a
+    messageId and a requestTime per record, which is the only end-to-end trace handle.
+versioning:
+  style: portal version record ("1.0")
+  artifact: lifecycle/tata-communications-lifecycle.yml
+error_envelope:
+  media_type: application/json
+  shape:
+    status: string — HTTP status of the response
+    message: string — error description
+  problem_details: false
+  artifact: errors/tata-communications-problem-types.yml
+rate_limit_signaling:
+  documented: false
+  note: >-
+    No rate-limit headers, quotas, or throttling policy are published. Akana Community
+    Manager applies contract-level quotas, but they are only visible to an approved
+    application owner.
+base_urls:
+  published: false
+  note: >-
+    None of the three published Swagger 2.0 documents declares host, basePath, or schemes,
+    and the portal exposes no endpoint record to an anonymous caller — so no production base
+    URL is documented for the Akana APIs. The MOVE APIs are fronted by the Azure API
+    Management gateway at move-external-apim-prod.azure-api.net (confirmed live: the root
+    returns the APIM {"statusCode":404,"message":"Resource not found"} envelope).
+webhooks:
+  artifact: asyncapi/tata-communications-webhooks.yml

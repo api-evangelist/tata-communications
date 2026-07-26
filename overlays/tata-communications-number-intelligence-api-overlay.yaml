@@ -1,0 +1,17 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Number Intelligence API
+  version: 1.0.0
+extends: openapi/tata-communications-number-intelligence-api.json
+actions:
+- target: $.info
+  update:
+    x-apievangelist-source: https://developer.tatacommunications.com/
+    x-apievangelist-harvested: '2026-07-25'
+    x-apievangelist-visibility: Public (3 of 49 portal APIs are anonymously accessible)
+- target: $
+  update:
+    x-apievangelist-gaps:
+    - no host, basePath or schemes declared — no production base URL is published anonymously
+    - no securityDefinitions declared — authentication is carried as a plain Authorization header parameter
+      or an appid header

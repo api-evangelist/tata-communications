@@ -1,0 +1,44 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  https://developer.tatacommunications.com/api/apis/versions/{versionId};
+  https://move-external-apim-prod.developer.azure-api.net/
+status: gated
+self_serve: false
+notes: >-
+  Tata Communications provisions sandbox environments, but no anonymous caller can reach
+  one. This artifact records the sandbox model that is genuinely observable rather than any
+  test credentials — there are none published. No test numbers, magic identifiers, test
+  accounts, or fixture tooling appear on any Tata Communications property.
+environments:
+- name: Sandbox
+  platform: Akana Community Manager (developer.tatacommunications.com)
+  anonymous_access: false
+  auto_approved: false
+  evidence: >-
+    Each API version record exposes SandboxServiceKey, SandboxAnonymousAccessAllowed:false
+    and SandboxEndpointAccessAutoApproved:false — i.e. a per-API sandbox endpoint exists and
+    access to it is granted by approval of an application contract, never automatically.
+  source: https://developer.tatacommunications.com/api/apis/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+- name: Production
+  platform: Akana Community Manager (developer.tatacommunications.com)
+  anonymous_access: false
+  auto_approved: false
+  evidence: ProductionServiceKey present; ProductionAnonymousAccessAllowed:false.
+- name: MOVE interactive console
+  platform: Azure API Management developer portal
+  anonymous_access: false
+  evidence: >-
+    Every MOVE API product exposes an Azure APIM "Try it out" console, but the console and
+    the subscription keys it needs are behind portal sign-in.
+  source: https://www.developer.move.tatacommunications.com/
+test_values:
+  published: false
+  note: No test numbers, test account ids, or simulator values are published for any product.
+test_credentials:
+  published: false
+  note: >-
+    Credentials are issued by approval — Akana application contracts on the first-party
+    portal, a MOVE portal subscription, or a sales conversation for DIGO ("You will need
+    auth token to access our APIs. Please fill in your details below and we will get in
+    touch with you.").

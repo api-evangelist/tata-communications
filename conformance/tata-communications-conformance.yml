@@ -1,0 +1,91 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  openapi/*.json; https://www.tatacommunications.com/cloud/cloud-compliance;
+  https://www.tatacommunications.com/policies
+notes: >-
+  Two different kinds of claim are recorded here. The API-level standards are derived from
+  the three anonymously downloadable Swagger 2.0 documents and are mostly negative — these
+  are plain HTTP/JSON carrier APIs with no cross-cutting standard adopted. The
+  organisational certifications are searched from Tata Communications' published Global
+  Cloud Compliance Programs page and apply to its cloud and network platforms, not
+  specifically to these APIs.
+standards:
+- id: openapi-3
+  conforms: false
+  evidence: All three published documents are Swagger 2.0; the portal will also render OAS 3.0.0/3.1 on request.
+- id: swagger-2
+  conforms: true
+  evidence: openapi/*.json all declare "swagger":"2.0"
+- id: oauth2
+  conforms: partial
+  evidence: >-
+    MOVE publishes an OAuth 2.0 bearer "Move Access Token API", but no oauth2 security
+    scheme is declared in any published specification and no scope reference exists.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on every host probed.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: >-
+    No application/problem+json media type in any specification; errors use a vendor
+    {status, message} envelope (see errors/tata-communications-problem-types.yml).
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on every host probed.
+- id: rfc8594-sunset-header
+  conforms: false
+  evidence: No deprecation or Sunset header policy is published.
+- id: pagination
+  conforms: true
+  evidence: >-
+    Offset pagination via pageNo/pageSize query parameters on top_25_cdr and
+    numberLookupRecords; the CDR OutputList schema returns totalItems/displayItems.
+- id: idempotency
+  conforms: false
+  evidence: No idempotency key header or parameter appears in any published specification or documentation.
+- id: camara
+  conforms: false
+  evidence: >-
+    No CAMARA reference of any kind on tatacommunications.com, developer.tatacommunications.com,
+    the MOVE portal, or the DIGO property. The November 2025 GSMA Open Gateway MoU belongs to
+    Tata Elxsi, a different Tata Group company.
+- id: gsma-open-gateway
+  conforms: false
+  evidence: No GSMA Open Gateway participation could be evidenced.
+- id: tmforum-open-api
+  conforms: false
+  evidence: No TM Forum Open API conformance certification could be evidenced from public sources.
+- id: 3gpp-nef-scef
+  conforms: false
+  evidence: No network exposure function surface is published.
+- id: e164
+  conforms: true
+  evidence: Number Intelligence API operates on E.164 subscriber numbers.
+- id: itu-e212
+  conforms: true
+  evidence: >-
+    Number Intelligence returns MCC and MNC explicitly described against ITU-T E.212 in the
+    response schema.
+certifications:
+  published: true
+  url: https://www.tatacommunications.com/cloud/cloud-compliance
+  scope: >-
+    Global Cloud Compliance Programs — applies to Tata Communications cloud and managed
+    infrastructure services. No API-specific attestation is published.
+  named:
+  - ISO/IEC 27001:2013
+  - ISO/IEC 27017:2015
+  - ISO/IEC 27018:2014
+  - ISO/IEC 20000-1:2011
+  - ISO/IEC 20000-9:2015
+  - SOC1
+  - SOC2
+  - PCI DSS
+  - HIPAA
+  - GDPR
+  - BDSG
+  - CSA STAR
+  - MTCS
+  - MeitY
+  - G-Cloud 10

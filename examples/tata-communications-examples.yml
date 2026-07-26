@@ -1,0 +1,84 @@
+generated: '2026-07-25'
+method: derived
+source: openapi/tata-communications-number-intelligence-api.json, openapi/tata-communications-mobile-messaging-exchange-account-administration.json,
+  openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+notes: Field-level examples published inside the provider Swagger 2.0 definitions, extracted verbatim.
+  No request/response example payloads are published anywhere else on an anonymously reachable Tata Communications
+  property.
+examples:
+- field: SuccessResponse.properties.requestTime
+  example: '2018-08-22T06:05:00+00:00'
+  type: string
+  description: This is the time when request is come to the MMX Hub.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.lastDeliveredTime
+  example: '2018-08-22T06:05:00+00:00'
+  type: string
+  description: This is the Last delivered time.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.messageId
+  example: b94ef907-7778-442c-9743-fe02238c6977
+  type: string
+  description: This is the internal unique Message Id.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.accountId
+  example: 35317-2
+  type: string
+  description: This is the customer account id assigned to the customer at the time of onboarding. User
+    can specify one or more custAccountId.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.destinationId
+  example: 1-245-0
+  type: string
+  description: This is the destination vpc
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.destinationCountry
+  example: unknown
+  type: string
+  description: This is the destination Country
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.destinationAddress
+  example: '919961986196'
+  type: string
+  description: This is the Destination Address.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.originatingAddress
+  example: LNKDIN
+  type: string
+  description: This is the Originating Address.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.attemptedStatus
+  example: Success
+  type: string
+  description: This is the status of attempted message.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.submittedStatus
+  example: Success
+  type: string
+  description: This is the status of submitted message.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.deliveredStatus
+  example: Success
+  type: string
+  description: This is the status of delivered message.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.errorCode
+  example: 0.0
+  type: number
+  description: This is the error code.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: SuccessResponse.properties.errorDescription
+  example: Success
+  type: string
+  description: This is the error description.
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: OutputList.properties.totalItems
+  example: 100.0
+  type: number
+  description: Total No. of Items available
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+- field: OutputList.properties.displayItems
+  example: 25.0
+  type: number
+  description: Total No. of Items displayed
+  source: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json

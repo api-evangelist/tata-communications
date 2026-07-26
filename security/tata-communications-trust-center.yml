@@ -1,0 +1,55 @@
+generated: '2026-07-25'
+method: searched
+probe: true
+url: https://www.tatacommunications.com/cloud/cloud-compliance
+kind: compliance-program-page
+notes: >-
+  Tata Communications does not run a hosted trust center (trust.tatacommunications.com and
+  status.tatacommunications.com do not resolve, and 0-working/probe-security-programs.py
+  found no trust or disclosure surface). What it does publish is a Global Cloud Compliance
+  Programs page that names its certifications and links a per-certification detail page for
+  each. That page is recorded here as the compliance surface; it covers cloud and managed
+  infrastructure services, not the APIs specifically.
+certifications:
+- ISO/IEC 27001:2013
+- ISO/IEC 27017:2015
+- ISO/IEC 27018:2014
+- ISO/IEC 20000-1:2011
+- ISO/IEC 20000-9:2015
+- SOC1
+- SOC2
+- PCI DSS
+- HIPAA
+- GDPR
+- BDSG
+- CSA STAR
+- MTCS
+- MeitY
+- G-Cloud 10
+evidence:
+- source: https://www.tatacommunications.com/cloud/cloud-compliance
+  status: 200
+  keywords:
+  - iso 27001
+  - soc2
+  - pci dss
+  - hipaa
+  - gdpr
+  - csa star
+  - compliance
+related:
+- https://www.tatacommunications.com/cyber-security-solutions/governance-risk-compliance
+- https://www.tatacommunications.com/policies
+- https://sustainability.tatacommunications.com/sustainability-disclosures
+gaps:
+  vulnerability_disclosure: >-
+    No responsible-disclosure or vulnerability-disclosure policy, no bug bounty program
+    (HackerOne / Bugcrowd / Intigriti), and no security.txt could be found for Tata
+    Communications. /vulnerability-disclosure and /responsible-disclosure return 404 and
+    www.tatacommunications.com/security is a cyber-security product page, not a policy.
+    The only disclosure-adjacent published channel is the corporate Whistleblower Policy
+    PDF linked from /policies. No VulnerabilityDisclosure or Security artifact is emitted
+    because there is nothing to record.
+  status_page: >-
+    No first-party status page. tatacommunications.statuspage.io is an unclaimed
+    Statuspage subdomain that redirects to Atlassian marketing.

@@ -60,6 +60,8 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/tata-communications-number-intelligence-api.json
+  - type: Overlay
+    url: overlays/tata-communications-number-intelligence-api-overlay.yaml
   - type: Documentation
     url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
   - type: APIReference
@@ -82,6 +84,8 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+  - type: Overlay
+    url: overlays/tata-communications-mobile-messaging-exchange-account-administration-overlay.yaml
   - type: Documentation
     url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
   - type: APIReference
@@ -104,6 +108,8 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+  - type: Overlay
+    url: overlays/tata-communications-mobile-messaging-exchange-cdr-report-api-overlay.yaml
   - type: Documentation
     url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
   - type: APIReference
@@ -118,6 +124,7 @@ apis:
     readable definition require portal sign-in, and anonymous calls to the
     catalogue endpoint return 401.
   humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-api
+  baseURL: https://move-external-apim-prod.azure-api.net
   tags:
   - IoT
   - SIM Management
@@ -138,6 +145,7 @@ apis:
     portal; the reference is behind sign-in and no anonymous machine-readable
     definition is served.
   humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-iot-api
+  baseURL: https://move-external-apim-prod.azure-api.net
   tags:
   - IoT
   - Connectivity Management
@@ -156,6 +164,7 @@ apis:
     developer portal; the reference is behind sign-in and no anonymous
     machine-readable definition is served.
   humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+  baseURL: https://move-external-apim-prod.azure-api.net
   tags:
   - Authentication
   - OAuth 2.0
@@ -166,6 +175,42 @@ apis:
   - type: APIReference
     url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
 common:
+- type: LLMsTxt
+  url: llms/tata-communications-llms.txt
+- type: MCPServer
+  url: mcp/tata-communications-mcp.yml
+- type: ToolCrosswalk
+  url: mcp/tata-communications-tool-crosswalk.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Authentication
+  url: authentication/tata-communications-authentication.yml
+- type: Conventions
+  url: conventions/tata-communications-conventions.yml
+- type: ErrorCatalog
+  url: errors/tata-communications-problem-types.yml
+- type: Examples
+  url: examples/tata-communications-examples.yml
+- type: DataModel
+  url: data-model/tata-communications-data-model.yml
+- type: Lifecycle
+  url: lifecycle/tata-communications-lifecycle.yml
+- type: Conformance
+  url: conformance/tata-communications-conformance.yml
+- type: Compliance
+  url: https://www.tatacommunications.com/cloud/cloud-compliance
+- type: TrustCenter
+  url: security/tata-communications-trust-center.yml
+- type: Sandbox
+  url: sandbox/tata-communications-sandbox.yml
+- type: Packages
+  url: packages/tata-communications-packages.yml
+- type: Webhooks
+  url: asyncapi/tata-communications-webhooks.yml
+- type: AgenticAccess
+  url: agentic-access/tata-communications-agentic-access.yml
+- type: DomainSecurity
+  url: security/tata-communications-domain-security.yml
 - type: Website
   url: https://www.tatacommunications.com/
 - type: DeveloperPortal
@@ -182,6 +227,22 @@ common:
   url: https://www.linkedin.com/company/tata-communication
 - type: Blog
   url: https://www.tatacommunications.com/blog/
+- type: Portal
+  url: https://www.developer.move.tatacommunications.com/
+- type: Support
+  url: https://www.tatacommunications.com/support
+- type: HelpCenter
+  url: https://www.tatacommunications.com/knowledge-base
+- type: Pricing
+  url: https://www.tatacommunications.com/cloud/pricing
+- type: TermsOfService
+  url: https://www.tatacommunications.com/policies/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.tatacommunications.com/policies/privacy
+- type: GitHubOrganization
+  url: https://github.com/tatacommunications
+- type: Login
+  url: https://developer.tatacommunications.com/login
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

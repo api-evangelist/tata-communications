@@ -1,0 +1,72 @@
+generated: '2026-07-25'
+method: derived
+source: mcp/tata-communications-mcp.yml + openapi/tata-communications-number-intelligence-api.json, openapi/tata-communications-mobile-messaging-exchange-account-administration.json,
+  openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+notes: One-to-one crosswalk between the candidate MCP tool surface and the published REST operations.
+  Tata Communications publishes no MCP server and no GraphQL endpoint, so there are no MCP-only or GraphQL-only
+  capabilities; every candidate tool is bound to a real operationId with high confidence.
+surfaces:
+  openapi:
+    files:
+    - openapi/tata-communications-number-intelligence-api.json
+    - openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+    - openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+    anonymous: true
+    note: Swagger 2.0, no host/basePath/schemes declared
+  graphql:
+    endpoint: null
+    note: no GraphQL surface found
+  mcp:
+    url: null
+    note: no hosted MCP server found; tool list is candidate/derived
+crosswalk:
+- tool: numberLookupDetails
+  category: number
+  rest:
+  - numberLookupDetails
+  binding: rest
+  confidence: high
+- tool: numberLookupRecords
+  category: records
+  rest:
+  - numberLookupRecords
+  binding: rest
+  confidence: high
+- tool: getdestination
+  category: destination
+  rest:
+  - getdestination
+  binding: rest
+  confidence: high
+- tool: getreport
+  category: report
+  rest:
+  - getreport
+  binding: rest
+  confidence: high
+- tool: postsenderId
+  category: senderId
+  rest:
+  - postsenderId
+  binding: rest
+  confidence: high
+- tool: top_25_cdr
+  category: CDR
+  rest:
+  - top_25_cdr
+  binding: rest
+  confidence: high
+- tool: cdr_by_messageId
+  category: CDR
+  rest:
+  - cdr_by_messageId
+  binding: rest
+  confidence: high
+mcp_only: []
+rest_only: []
+coverage:
+  tools_named: 7
+  tools_bound: 7
+  mcp_only: 0
+  rest_operations_total: 7
+  rest_operations_with_tool: 7

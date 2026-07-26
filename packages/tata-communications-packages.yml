@@ -1,0 +1,37 @@
+generated: '2026-07-25'
+method: searched
+source: npm registry search, PyPI, GitHub organisation APIs, provider documentation
+notes: >-
+  No first-party Tata Communications client library exists on any public package registry.
+  Both plausible GitHub organisations resolve but publish nothing, and no SDK is offered on
+  the developer portal, the MOVE portal, or the DIGO documentation site. Recorded as a
+  verified absence — no SDKs pointer is emitted.
+packages: []
+registries_probed:
+- registry: npm
+  query: tata communications
+  result: no first-party package (only unrelated third-party matches)
+- registry: pypi
+  queries: [tatacommunications, tata-communications, tcl-move]
+  result: 404 for all
+- registry: github
+  url: https://api.github.com/orgs/tatacommunications
+  status: 200
+  public_repos: 0
+- registry: github
+  url: https://api.github.com/orgs/tata-communications
+  status: 200
+  public_repos: 0
+- registry: postman
+  result: >-
+    No first-party public workspace or collection. A third-party team workspace
+    ("TATA API Calls", postman.com/divigo-india) exists but is not published by Tata
+    Communications and is not wired.
+- registry: maven-central
+  result: none found
+- registry: nuget
+  result: none found
+distribution_note: >-
+  Tata Communications' CPaaS business reaches developers through the separately branded
+  Kaleyra portal (developers.kaleyra.io), which is profiled as its own provider in this
+  network; any client libraries there belong to that profile, not this one.

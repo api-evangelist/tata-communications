@@ -1,0 +1,123 @@
+generated: '2026-07-25'
+method: derived
+status: candidate
+source: openapi/tata-communications-number-intelligence-api.json, openapi/tata-communications-mobile-messaging-exchange-account-administration.json,
+  openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+notes: No hosted or remote Model Context Protocol server was found for Tata Communications on its developer
+  portal, the MOVE Azure API Management portal, the DIGO property, npm, or the public MCP registries.
+  The tool list below is a candidate derived one-per-operation from the three anonymously downloadable
+  Swagger 2.0 documents; each tool inherits its real input contract from the referenced operation.
+server:
+  name: tata-communications
+  transport: http
+  url: null
+  published: false
+tools:
+- name: numberLookupDetails
+  description: number lookup details
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupDetails
+  method: GET
+  path: /number/{phnum}
+  inputs:
+  - name: Authorization
+    in: header
+    required: true
+  - name: phnum
+    in: path
+    required: true
+- name: numberLookupRecords
+  description: number lookup records of the user
+  source_operation: openapi/tata-communications-number-intelligence-api.json#numberLookupRecords
+  method: GET
+  path: /records
+  inputs:
+  - name: Authorization
+    in: header
+    required: true
+  - name: pageNo
+    in: query
+    required: false
+  - name: pageSize
+    in: query
+    required: false
+- name: getdestination
+  description: GET /destination
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-account-administration.json#getdestination
+  method: GET
+  path: /destination
+  inputs:
+  - name: accountId
+    in: query
+    required: false
+  - name: mnc
+    in: query
+    required: false
+  - name: appid
+    in: header
+    required: false
+  - name: mcc
+    in: query
+    required: false
+- name: getreport
+  description: GET /report
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-account-administration.json#getreport
+  method: GET
+  path: /report
+  inputs:
+  - name: accountId
+    in: query
+    required: false
+  - name: appid
+    in: header
+    required: false
+- name: postsenderId
+  description: POST /senderId
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-account-administration.json#postsenderId
+  method: POST
+  path: /senderId
+  inputs:
+  - name: accountId
+    in: query
+    required: false
+  - name: mnc
+    in: query
+    required: false
+  - name: appid
+    in: header
+    required: false
+  - name: SenderIdWhitelistRequest
+    in: body
+    required: false
+  - name: mcc
+    in: query
+    required: false
+- name: top_25_cdr
+  description: message logs for a specific account Id & time frame
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#top_25_cdr
+  method: GET
+  path: /CDR/account/{accountId}
+  inputs:
+  - name: accountId
+    in: path
+    required: true
+  - name: fromDate
+    in: query
+    required: true
+  - name: toDate
+    in: query
+    required: true
+  - name: pageNo
+    in: query
+    required: false
+  - name: pageSize
+    in: query
+    required: false
+- name: cdr_by_messageId
+  description: message logs for a message ID
+  source_operation: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json#cdr_by_messageId
+  method: GET
+  path: /CDR/message/{messageId}
+  inputs:
+  - name: messageId
+    in: path
+    required: true

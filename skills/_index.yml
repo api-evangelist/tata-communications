@@ -1,0 +1,22 @@
+generated: '2026-07-25'
+method: generated
+source: openapi/*.json
+notes: >-
+  Packaged agent skills for the three Tata Communications APIs that publish an anonymously
+  downloadable Swagger 2.0 document. Every step is grounded in a real operationId from those
+  documents. No skills are authored for the MOVE or DIGO products because neither publishes
+  a machine-readable contract. Tata Communications publishes no AGENTS.md or first-party
+  skills of its own.
+skills:
+- file: tata-communications-number-lookup.md
+  name: Look up a phone number with Tata Communications Number Intelligence
+  api: openapi/tata-communications-number-intelligence-api.json
+  operations: [numberLookupDetails, numberLookupRecords]
+- file: tata-communications-message-cdr-reporting.md
+  name: Pull message CDRs from the Tata Communications Mobile Messaging Exchange
+  api: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+  operations: [top_25_cdr, cdr_by_messageId]
+- file: tata-communications-sender-id-registration.md
+  name: Register a sender ID and check destinations on the Mobile Messaging Exchange
+  api: openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+  operations: [getdestination, getreport, postsenderId]

@@ -1,0 +1,97 @@
+generated: '2026-07-25'
+method: searched
+source: live probes of every Tata Communications host in apis.yml
+notes: >-
+  No /.well-known/ discovery document of any kind is served on any Tata Communications
+  property that was probed — corporate site, the Akana Community Manager developer portal,
+  or the MOVE Azure API Management portal. There is no security.txt (RFC 9116), no
+  api-catalog (RFC 9727), no OpenID Connect discovery document, no RFC 8414 authorization
+  server metadata, and no ai-plugin.json. This is a recorded absence, not a gap in probing.
+  The MOVE platform does issue OAuth 2.0 bearer tokens (see authentication/), but it does
+  so through a documented "Move Access Token API" rather than through discovery metadata.
+hosts:
+- host: https://www.tatacommunications.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://tatacommunications.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://developer.tatacommunications.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://move-external-apim-prod.developer.azure-api.net
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+contract_discovery:
+  notes: >-
+    Contract discovery was re-run against every documented host before recording any
+    "no spec" result. The three anonymously downloadable Swagger 2.0 documents already in
+    openapi/ remain the only machine-readable contracts Tata Communications serves to an
+    anonymous caller.
+  probes:
+  - url: https://developer.tatacommunications.com/api/apis
+    status: 200
+    note: >-
+      Akana Community Manager catalogue JSON. Returns exactly 3 of the 49 catalogue APIs
+      with visibility "Public" — Mobile Messaging Exchange Account Administration,
+      Mobile Messaging Exchange CDR Report API, and Number Intelligence API. All three are
+      already harvested to openapi/.
+  - url: https://developer.tatacommunications.com/api/apis/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+    status: 200
+    note: >-
+      API version record. Confirms Environment "Production", Visibility "Public",
+      binding.http, ProductionAnonymousAccessAllowed false and SandboxAnonymousAccessAllowed
+      false. No endpoint host is exposed to an anonymous caller in this record or any
+      sub-resource (/endpoints, /details and /deployments all return the SPA shell;
+      /implementations returns 405).
+  - url: https://developer.tatacommunications.com/api/apis/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl/design?specification=oas3
+    status: 200
+    note: >-
+      The same design endpoint will render OpenAPI 3.0.0 as well as Swagger 2.0. The
+      swagger2 rendering was kept because the oas3 conversion is lossy on this tenant.
+      Neither rendering declares servers/host.
+  - url: https://move-external-apim-prod.azure-api.net/
+    status: 404
+    note: >-
+      Azure API Management gateway root for the MOVE portal — returns the APIM
+      envelope {"statusCode":404,"message":"Resource not found"}, confirming a live
+      gateway behind move-external-apim-prod.developer.azure-api.net.
+  - url: https://www.developer.move.tatacommunications.com/
+    status: 200
+    note: >-
+      First-party vanity hostname fronting the same MOVE Azure API Management developer
+      portal; names the same three API products and links every "Try it out" to
+      move-external-apim-prod.developer.azure-api.net.
+  - url: https://comms.tatacommunications.com/docs/api/overview.html
+    status: 0
+    note: DNS does not resolve — stale search-engine result for a retired CPaaS docs host.
+  - url: https://docs.tclaws.co/
+    status: 0
+    note: NXDOMAIN — still the published "API Reference" link on www.tatacommunications.com/api-zone.
+  - url: https://tatacommunications.statuspage.io/
+    status: 200
+    note: >-
+      Not a Tata Communications status page — the subdomain is unclaimed and redirects to
+      Atlassian's Statuspage marketing site. No first-party status page was found.
+  graphql: none found
+  grpc: none found
+  mcp: none found
+  asyncapi: none found

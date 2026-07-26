@@ -1,0 +1,80 @@
+generated: '2026-07-25'
+method: searched
+source: >-
+  openapi/*.json (Swagger 2.0 harvested from developer.tatacommunications.com),
+  https://www.developer.move.tatacommunications.com/,
+  https://tatacommunicationsdigo.io/documentation-api/
+docs: https://developer.tatacommunications.com/
+summary:
+  types:
+  - apiKey
+  - oauth2
+  spec_declared_security_schemes: 0
+  api_key_in:
+  - header
+  oauth2_flows:
+  - clientCredentials
+  note: >-
+    None of the three anonymously downloadable Swagger 2.0 documents declares a
+    securityDefinitions block, so this profile is searched from the operation parameters
+    and the provider's own product documentation rather than derived mechanically. Tata
+    Communications runs three separate authentication regimes across three separate
+    developer properties; there is no single account, no single token, and no shared
+    identity provider between them.
+schemes:
+- name: Akana Authorization header
+  type: apiKey
+  in: header
+  parameter: Authorization
+  where: developer.tatacommunications.com (Akana Community Manager)
+  required: true
+  spec_declared: false
+  sources:
+  - openapi/tata-communications-number-intelligence-api.json
+  evidence: >-
+    The Number Intelligence API declares a required header parameter named "Authorization"
+    with the description "used for authentication in Akana". It is an operation parameter,
+    not a securityDefinitions entry, so no scheme type, no token format, and no token
+    endpoint are machine-readable.
+- name: Akana application id header
+  type: apiKey
+  in: header
+  parameter: appid
+  where: developer.tatacommunications.com (Akana Community Manager)
+  required: false
+  spec_declared: false
+  sources:
+  - openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+  evidence: >-
+    All three Mobile Messaging Exchange Account Administration operations carry an "appid"
+    header parameter, which is the Akana Community Manager application identifier issued
+    when an app is registered against an API contract.
+- name: MOVE OAuth 2.0 bearer token
+  type: oauth2
+  flow: clientCredentials
+  where: MOVE (Azure API Management, move-external-apim-prod)
+  spec_declared: false
+  token_api: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+  scopes_published: false
+  evidence: >-
+    The MOVE developer portal publishes a dedicated "Move Access Token API — API to generate
+    Access Token (OAuth 2.0 bearer token) to access Move APIs" alongside the MOVE SIM Connect
+    and MOVE IOT Connect APIs. The token API's own reference is behind portal sign-in, so the
+    grant type, token endpoint URL, and any scope list are not anonymously verifiable; no
+    RFC 8414 or OpenID Connect discovery document is served on the host.
+- name: DIGO auth token (issued on request)
+  type: apiKey
+  in: header
+  where: DIGO CPaaS (tatacommunicationsdigo.io)
+  spec_declared: false
+  self_serve: false
+  evidence: >-
+    "You will need auth token to access our APIs. Please fill in your details below and we
+    will get in touch with you." Access to the DIGO CPaaS APIs is sales-led; there is no
+    self-serve credential issuance and no published token endpoint.
+gaps:
+- No securityDefinitions/securitySchemes in any published specification.
+- No OAuth scope reference is published for MOVE, so no scopes/ artifact is emitted.
+- No mutual TLS, no OpenID Connect, and no CIBA surface is documented anywhere.
+- No anonymous sign-up path on the first-party Akana portal; the MOVE portal exposes
+  /signin and /signup but everything behind them is gated.
