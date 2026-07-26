@@ -1,0 +1,187 @@
+aid: tata-communications
+url: https://raw.githubusercontent.com/api-evangelist/tata-communications/refs/heads/main/apis.yml
+name: Tata Communications
+kind: company
+description: >-
+  Tata Communications is the global wholesale carrier and digital-infrastructure
+  arm of India's Tata Group, headquartered in Mumbai. It owns one of the world's
+  largest subsea cable networks, carries a large share of global internet routes,
+  and sells international voice and messaging wholesale, IZO network services,
+  MOVE global IoT and eSIM connectivity, MVNE services, and — through its
+  October 2023 acquisition of Kaleyra — a full CPaaS, UCaaS, and CCaaS stack.
+  It sits in the supply layer of the telecom value chain: a carrier's carrier
+  whose customers are mostly other operators, enterprises, and aggregators
+  rather than individual developers. Its API posture matches that position and
+  is honestly partner-gated. Tata Communications runs a real first-party
+  developer portal at developer.tatacommunications.com, built on Akana Community
+  Manager, whose catalogue names 49 APIs — but only three are marked Public and
+  return a downloadable Swagger 2.0 document to an anonymous caller; the other
+  forty-six answer 401. MOVE IoT has a second, separate Azure API Management
+  portal that lists three API products but gates the reference behind sign-in.
+  The DIGO CPaaS documentation site is HTML-only, sales-gated behind a
+  "we will get in touch" form, and was serving an expired TLS certificate at the
+  time of review. No CAMARA network API and no GSMA Open Gateway participation
+  could be evidenced anywhere on its properties. In practice most developers
+  reach Tata Communications through the separately branded Kaleyra CPaaS
+  portal rather than through Tata Communications itself.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Telecommunications
+- India
+- Wholesale Carrier
+- CPaaS
+- Messaging
+- Voice
+- IoT
+- eSIM
+- Number Intelligence
+- Connectivity
+- Subsea Cable
+- Partner Gated
+created: '2026-07-25'
+modified: '2026-07-25'
+specificationVersion: '0.19'
+apis:
+- aid: tata-communications:tata-communications-number-intelligence-api
+  name: Number Intelligence API
+  description: >-
+    Queries the number-lookup details of any E.164 number and returns subscriber
+    type, the current and parent network, the port-corrected service provider
+    network (SPN), and MCC/MNC when the number is mobile, so a sender can decide
+    whether to route traffic to a fixed or mobile destination. Publicly visible
+    on the Tata Communications developer portal with a downloadable Swagger 2.0
+    document; 2 operations across 2 paths.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  tags:
+  - Number Intelligence
+  - Number Portability
+  - Routing
+  - Wholesale
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-number-intelligence-api.json
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+- aid: tata-communications:tata-communications-mobile-messaging-exchange-account-administration
+  name: Mobile Messaging Exchange - Account Administration
+  description: >-
+    Account administration and lookup reporting for the Tata Communications
+    Mobile Messaging Exchange (A2P/wholesale SMS) platform, covering destination
+    lookup, report retrieval, and sender-ID registration. Publicly visible on the
+    Tata Communications developer portal with a downloadable Swagger 2.0
+    document; 3 operations across 3 paths.
+  humanURL: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  tags:
+  - Messaging
+  - SMS
+  - Account Administration
+  - Sender ID
+  - Wholesale
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+- aid: tata-communications:tata-communications-mobile-messaging-exchange-cdr-report-api
+  name: Mobile Messaging Exchange - CDR Report API
+  description: >-
+    Call/message detail record reporting for the Tata Communications Mobile
+    Messaging Exchange, returning message logs for a given account ID and time
+    frame or for a single customer message ID. Publicly visible on the Tata
+    Communications developer portal with a downloadable Swagger 2.0 document;
+    2 operations across 2 paths.
+  humanURL: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  tags:
+  - Messaging
+  - SMS
+  - CDR
+  - Reporting
+  - Wholesale
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
+- aid: tata-communications:tata-communications-move-sim-connect-api
+  name: MOVE SIM Connect API
+  description: >-
+    Full-service API for the Tata Communications MOVE platform SIM Connect
+    product, supporting management of a tenancy — its key entities, services, and
+    the products the tenancy avails. Published on the separate MOVE developer
+    portal hosted on Azure API Management; the API reference and any machine-
+    readable definition require portal sign-in, and anonymous calls to the
+    catalogue endpoint return 401.
+  humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-api
+  tags:
+  - IoT
+  - SIM Management
+  - eSIM
+  - Connectivity
+  - MOVE
+  properties:
+  - type: Documentation
+    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-api
+  - type: APIReference
+    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-api
+- aid: tata-communications:tata-communications-move-iot-connect-api
+  name: MOVE IOT Connect API
+  description: >-
+    Tata Communications MOVE platform IOT API, permitting management of a tenancy
+    of the MOVE IOT Connect product including its key entities, services, and
+    subscribed products. Published on the MOVE Azure API Management developer
+    portal; the reference is behind sign-in and no anonymous machine-readable
+    definition is served.
+  humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-iot-api
+  tags:
+  - IoT
+  - Connectivity Management
+  - Cellular
+  - MOVE
+  properties:
+  - type: Documentation
+    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-iot-api
+  - type: APIReference
+    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-iot-api
+- aid: tata-communications:tata-communications-move-access-token-api
+  name: MOVE Access Token API
+  description: >-
+    Issues an OAuth 2.0 bearer access token used to call the other Tata
+    Communications MOVE APIs. Published on the MOVE Azure API Management
+    developer portal; the reference is behind sign-in and no anonymous
+    machine-readable definition is served.
+  humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+  tags:
+  - Authentication
+  - OAuth 2.0
+  - MOVE
+  properties:
+  - type: Documentation
+    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+  - type: APIReference
+    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+common:
+- type: Website
+  url: https://www.tatacommunications.com/
+- type: DeveloperPortal
+  url: https://developer.tatacommunications.com/
+- type: Documentation
+  url: https://developer.tatacommunications.com/apis
+- type: Documentation
+  url: https://move-external-apim-prod.developer.azure-api.net/
+- type: Documentation
+  url: https://www.tatacommunications.com/api-zone
+- type: SignUp
+  url: https://move-external-apim-prod.developer.azure-api.net/signup
+- type: LinkedIn
+  url: https://www.linkedin.com/company/tata-communication
+- type: Blog
+  url: https://www.tatacommunications.com/blog/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

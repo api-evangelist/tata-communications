@@ -1,0 +1,412 @@
+aid: tata-communications
+name: Tata Communications
+review:
+  question: >-
+    Does Tata Communications operate a real, self-serve public developer portal
+    with downloadable API definitions, and what is its CAMARA / GSMA Open Gateway
+    posture?
+  answer: partial
+  date: '2026-07-25'
+  reviewer: API Evangelist
+  homeMarket: India
+  tier: wholesale-messaging
+  gated: true
+findings:
+  summary: |
+    Tata Communications is a wholesale carrier and digital-infrastructure
+    provider, not a mobile network operator and not a CPaaS-style aggregator.
+    Its developer surface reflects that: a real first-party API portal exists and
+    is genuinely machine-readable, but almost all of it is closed to anonymous
+    callers, and the parts of the business that developers actually integrate
+    with (CPaaS) reach the market under the separately branded Kaleyra portal.
+
+    The first-party portal at https://developer.tatacommunications.com (HTTP 200)
+    is an Akana Community Manager instance. Its public HTML catalogue at /apis
+    names 49 APIs. Its JSON catalogue at /api/apis returns only 3 of those 49
+    with visibility "Public"; anonymous GETs against the other 46 API records
+    return HTTP 401. So the portal is a real portal — not a marketing page — but
+    it is 94% partner-gated. There is no anonymous sign-up path exposed; even the
+    tenant configuration endpoint (/api/tenants/tcl) answers 401.
+
+    The three Public APIs each expose a genuine, parseable Swagger 2.0 document
+    over an anonymous GET, and the same endpoint advertises OAS3 and OAS31
+    variants in its Links block (the swagger2 rendering is the richer of the two —
+    the oas3 conversion drops summaries and tags — so swagger2 was harvested
+    verbatim). All three specs are Mobile Messaging Exchange / number-lookup
+    wholesale APIs, which is exactly where a carrier's carrier sells.
+
+    Tata Communications MOVE (global IoT / eSIM / MVNE) runs a SECOND and
+    entirely separate developer portal on Azure API Management at
+    https://move-external-apim-prod.developer.azure-api.net (HTTP 200). Its home
+    page publicly names three API products — MOVE SIM Connect API, MOVE IOT
+    Connect API, and Move Access Token API — but the catalogue behind it is
+    gated: anonymous calls to the APIM management endpoint
+    (move-external-apim-prod.management.azure-api.net/.../apis?api-version=2022-04-01-preview)
+    and to each per-API export return HTTP 401. Sign in / Sign up links are
+    present, so self-serve registration may exist behind the wall, but nothing
+    machine-readable is reachable without an account.
+
+    The DIGO CPaaS property (tatacommunicationsdigo.io) is a WordPress site whose
+    "Documentation and APIs" index does publish a faithful product breakdown
+    (Programmable Voice US/India, Email, Authenticate MFA, One Tap
+    Authentication, WhatsApp, Number Management, SMS, Anonymize, Engage) and
+    whose per-product pages use a WordPress template literally named
+    "swaggerapidetails" — but no OpenAPI/Swagger document is downloadable and the
+    page bodies render no endpoints server-side. Access is explicitly sales-led:
+    "You will need auth token to access our APIs. Please fill in your details
+    below and we will get in touch with you." Two degradations were observed and
+    are recorded because they are real: the site's TLS certificate
+    (CN=tatacommunicationsdigo.io, issued by Thawte TLS RSA CA G1) expired on
+    2026-07-23, two days before this review, so the docs are unreachable over
+    HTTPS without disabling certificate validation; and the console host
+    console-ssp.tatacommunicationsdigo.io does not resolve in DNS. Placeholder
+    "Lorem ipsum" copy is still live in the Services menu.
+
+    The corporate marketing page https://www.tatacommunications.com/api-zone
+    (HTTP 200) is the "API Zone" pitch — "our easy to use REST APIs are available
+    to developers through our purpose-built API Zone" — and its "API Reference"
+    call to action links to https://docs.tclaws.co/, which does not resolve
+    (NXDOMAIN on both tclaws.co and docs.tclaws.co). The only other artefact the
+    page offers is a PDF brochure. That dead reference link is the single
+    clearest signal of the gap between the stated API posture and the shipped one.
+
+    CAMARA posture: no CAMARA reference of any kind was found on
+    tatacommunications.com, on developer.tatacommunications.com, on the MOVE
+    portal, or on the DIGO property. Tata Communications is not a mobile network
+    operator and no GSMA Open Gateway participation could be evidenced. The GSMA
+    Open Gateway / CAMARA memorandum of understanding widely reported in November
+    2025 belongs to TATA ELXSI — a different Tata Group company (design and
+    engineering services, TETHER platform) — and must not be attributed to Tata
+    Communications. There is not even a press release here: this is an absence,
+    not an announcement. The closest adjacent capabilities in the portfolio are
+    pre-CAMARA and carrier-native rather than CAMARA-shaped: the Number
+    Intelligence API (E.164 lookup, portability dip, MCC/MNC) on the first-party
+    portal, and DIGO's "Mobile Connect" (the older GSMA identity scheme), "One Tap
+    Authentication", "HLR Lookup", and "Verified Calls / Verified SMS" product
+    entries. None of these are CAMARA Number Verification, SIM Swap, Device
+    Location, Device Status, Quality on Demand, Carrier Billing, KYC Match, Scam
+    Signal, Device Swap, or Population Density implementations.
+
+    TM Forum: no TM Forum Open API conformance certification (TMF620, TMF622,
+    TMF641 or any other) could be evidenced for Tata Communications from public
+    sources during this review.
+
+    3GPP exposure: no NEF (Network Exposure Function) or SCEF surface is
+    published. Tata Communications does market Private 5G and MVNE services under
+    MOVE, and its gated portal catalogue names network-provisioning APIs
+    (Network service provisioning - Access SREVPN, Threadspan Network Automation
+    API, GNS IWAN/GVPN/NDE APIs), but none are anonymously reachable and none are
+    described as 3GPP exposure functions.
+
+    SDKs and source: the GitHub organisations github.com/tatacommunications and
+    github.com/tata-communications both exist and both have 0 public
+    repositories. No first-party SDK was found on npm. No public Postman
+    workspace, no GraphQL endpoint, no published .proto, and no AsyncAPI were
+    found.
+
+    Channel to developers: in practice Tata Communications' CPaaS business
+    reaches developers through Kaleyra (acquired October 2023), whose docs at
+    developers.kaleyra.io are a real self-serve ReadMe-hosted developer portal —
+    and which carry zero "Tata" branding in their page source. Kaleyra is
+    profiled separately in this network. That split is the finding: the carrier
+    sells wholesale through a gated Akana portal, and the developer-facing
+    product ships under an acquired brand.
+  developerPortal:
+    url: https://developer.tatacommunications.com/
+    httpStatus: 200
+    platform: Akana Community Manager (atmosphere / hermosa theme)
+    real: true
+    loginWall: partial
+    note: >-
+      A real portal with a machine-readable catalogue, but only 3 of the 49 APIs
+      it lists are anonymously accessible. No anonymous sign-up path is exposed.
+  secondaryPortals:
+  - name: Tata Communications MOVE API Developer Portal
+    url: https://move-external-apim-prod.developer.azure-api.net/
+    httpStatus: 200
+    platform: Azure API Management developer portal
+    real: true
+    loginWall: true
+    note: Three API products named publicly; catalogue and exports return 401 anonymously.
+  - name: Tata Communications DIGO — Documentation and APIs
+    url: https://tatacommunicationsdigo.io/documentation-api/
+    httpStatus: 200
+    tlsCertificateExpired: '2026-07-23'
+    real: true
+    loginWall: true
+    note: >-
+      HTML-only product documentation, no downloadable definition, sales-gated
+      ("we will get in touch"); TLS certificate expired 2026-07-23; console host
+      console-ssp.tatacommunicationsdigo.io does not resolve.
+  - name: Tata Communications API Zone (marketing)
+    url: https://www.tatacommunications.com/api-zone
+    httpStatus: 200
+    real: false
+    note: >-
+      Marketing page. Its "API Reference" link points at https://docs.tclaws.co/
+      which is NXDOMAIN. Only downloadable artefact is a PDF brochure.
+  probes:
+  - url: https://developer.tatacommunications.com
+    status: 200
+  - url: https://developers.tatacommunications.com
+    status: 0
+    note: DNS does not resolve
+  - url: https://docs.tatacommunications.com
+    status: 0
+    note: DNS does not resolve
+  - url: https://api.tatacommunications.com
+    status: 404
+  - url: https://www.tatacommunications.com/developer
+    status: 404
+  - url: https://www.tatacommunications.com/developers
+    status: 404
+  - url: https://www.tatacommunications.com/api
+    status: 404
+  - url: https://www.tatacommunications.com/business/api
+    status: 404
+  - url: https://opengateway.tatacommunications.com
+    status: 0
+    note: DNS does not resolve
+  - url: https://www.tatacommunications.com/opengateway
+    status: 404
+  - url: https://developers.opengateway.tatacommunications.com
+    status: 0
+    note: DNS does not resolve
+  - url: https://developer.tatacommunications.com/openapi.json
+    status: 404
+  - url: https://developer.tatacommunications.com/swagger.json
+    status: 404
+  - url: https://developer.tatacommunications.com/api-docs
+    status: 404
+  - url: https://developer.tatacommunications.com/.well-known/openid-configuration
+    status: 404
+  - url: https://developer.tatacommunications.com/.well-known/oauth-authorization-server
+    status: 404
+  - url: https://www.tatacommunications.com/api-zone
+    status: 200
+  - url: https://docs.tclaws.co/
+    status: 0
+    note: NXDOMAIN — dead "API Reference" link published on the live API Zone page
+  - url: https://move-external-apim-prod.developer.azure-api.net/
+    status: 200
+  - url: https://move-external-apim-prod.management.azure-api.net/.../apis?api-version=2022-04-01-preview
+    status: 401
+  - url: https://tatacommunicationsdigo.io/documentation-api/
+    status: 200
+    note: only reachable with TLS verification disabled; certificate expired 2026-07-23
+  - url: https://console-ssp.tatacommunicationsdigo.io/login
+    status: 0
+    note: DNS does not resolve
+  - url: https://api.github.com/orgs/tatacommunications
+    status: 200
+    note: 0 public repositories
+  - url: https://api.github.com/orgs/tata-communications
+    status: 200
+    note: 0 public repositories
+  openapi:
+    downloadable: true
+    count: 3
+    format: Swagger 2.0 (OAS3 / OAS31 renderings also advertised by the same endpoint)
+    catalogueListed: 49
+    catalogueAnonymouslyAccessible: 3
+    catalogueGated: 46
+    fetchDate: '2026-07-25'
+    specs:
+    - file: openapi/tata-communications-number-intelligence-api.json
+      title: Number Intelligence API
+      version: '1.0'
+      sourceURL: https://developer.tatacommunications.com/api/apis/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl/design?specification=swagger2
+      httpStatus: 200
+      paths: 2
+      operations: 2
+      swagger: '2.0'
+    - file: openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+      title: Mobile Messaging Exchange - Account Administration
+      version: '1.0'
+      sourceURL: https://developer.tatacommunications.com/api/apis/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl/design?specification=swagger2
+      httpStatus: 200
+      paths: 3
+      operations: 3
+      swagger: '2.0'
+    - file: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+      title: Mobile Messaging Exchange - CDR Report API
+      version: '1.0'
+      sourceURL: https://developer.tatacommunications.com/api/apis/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl/design?specification=swagger2
+      httpStatus: 200
+      paths: 2
+      operations: 2
+      swagger: '2.0'
+    note: >-
+      No host, basePath, or schemes are declared in any of the three harvested
+      documents, so no production base URL is documented anonymously. No
+      securityDefinitions block is present either; the Number Intelligence
+      document instead carries a required "Authorization" header parameter
+      described as "used for authentication in Akana".
+  camara:
+    posture: >-
+      No CAMARA reference found — not an implementation, not a channel, not even
+      a press release. Tata Communications is a wholesale carrier rather than a
+      mobile network operator, and the November 2025 GSMA Open Gateway MoU
+      belongs to Tata Elxsi, a different Tata Group company.
+    apis: []
+    openGatewayMember: false
+    adunaChannel: false
+    cpaasChannel: >-
+      Its own CPaaS reaches developers through the separately branded Kaleyra
+      portal (developers.kaleyra.io), acquired October 2023.
+    pressReleaseOnly: false
+    adjacentPreCamaraCapabilities:
+    - Number Intelligence API (E.164 lookup, portability dip indicator, MCC/MNC) — first-party, public, Swagger harvested
+    - DIGO "Mobile Connect" (legacy GSMA identity scheme) — product page only
+    - DIGO "One Tap Authentication" (Initiate / Verify) — HTML docs only
+    - DIGO "HLR Lookup" — product page only
+    - DIGO "Verified Calls" / "Verified SMS" — product page only
+    evidenceNote: >-
+      Do not attribute Tata Elxsi's GSMA Fusion MoU, TETHER platform, or QoD
+      use-case work to Tata Communications. They are separate Tata Group
+      companies.
+  tmforum:
+    conformanceCertified: false
+    apisFound: []
+    note: No TM Forum Open API conformance certification could be evidenced from public sources.
+  threeGPP:
+    nef: false
+    scef: false
+    networkSlicingAPI: false
+    edgeMecAPI: false
+    note: >-
+      Private 5G and MVNE are marketed under MOVE and network-provisioning APIs
+      appear by name in the gated portal catalogue, but no 3GPP exposure function
+      is published.
+  auth:
+    schemes:
+    - name: Opaque Authorization header
+      where: developer.tatacommunications.com (Akana Community Manager)
+      evidence: >-
+        Required "Authorization" header parameter in the Number Intelligence
+        Swagger, documented as "used for authentication in Akana". No
+        securityDefinitions block is present in any harvested document.
+    - name: OAuth 2.0 bearer token
+      where: Tata Communications MOVE (Azure API Management)
+      evidence: >-
+        "Move Access Token API — API to generate Access Token (OAuth 2.0 bearer
+        token) to access Move APIs", published on the MOVE portal home page.
+    - name: Auth token issued on request
+      where: Tata Communications DIGO
+      evidence: >-
+        "You will need auth token to access our APIs. Please fill in your details
+        below and we will get in touch with you."
+    ciba: false
+    cibaNote: >-
+      CIBA (Client-Initiated Backchannel Authentication) does not appear anywhere.
+      This follows from the CAMARA absence — there is no network-based
+      authorization surface to back it.
+    wellKnown:
+      openidConfiguration: 404
+      oauthAuthorizationServer: 404
+  webhooks:
+    firstPartyEventCatalogPublished: false
+    evidence:
+    - >-
+      "Horizontal Webhook API" appears by name in the gated portal catalogue but
+      returns 401 anonymously.
+    - >-
+      DIGO documents "Webhook Payload" for WhatsApp and "DLR Call back Report" /
+      "Tiny URL Call back Report" for Engage, in HTML only.
+    asyncapi: false
+  sdks:
+    githubOrganizations:
+    - url: https://github.com/tatacommunications
+      publicRepos: 0
+    - url: https://github.com/tata-communications
+      publicRepos: 0
+    npm: none found
+    pypi: none found
+    maven: none found
+    nuget: none found
+    postmanWorkspace: none found
+    graphql: none found
+    grpc: none found
+  productFamilies:
+    firstPartyPortalCatalogue:
+      publicAndHarvested:
+      - Number Intelligence API
+      - Mobile Messaging Exchange - Account Administration
+      - Mobile Messaging Exchange - CDR Report API
+      namedButGated401:
+      - Planned Outage Event API
+      - Fraud Management (Products / Blocks / Sandbox Identity / STMS ORDER)
+      - GNS Auth / Customer / GVPN / IAS / IWAN / NDE APIs
+      - Manage IZO Details API
+      - IZO MCC API / IZO MCC Middleware Modular API
+      - CDN Basic / Media / Caching APIs
+      - Virtual Calling Number API - Admin
+      - Network service provisioning - Access SREVPN
+      - SRE VPN Callback API
+      - TATA MOVE Device Management API
+      - SOTA Optimization API
+      - Threadspan Network Automation API / Threadspan User Management API
+      - Horizontal Webhook API
+      - Partner Incident Management API
+      - Application Management API
+      - SCCM API
+      - Peer Request Management
+      - Purchase Order Details API / Supplier Task API / Vendor Master Integration API
+      - Tax Compliant IRN API
+      - Email Task API
+      - TACAS User API
+      - Etac ChatBot API
+      - GSC O2C (Voice Inventory Access Services Extension / SECS Legal Entity)
+      - SECS Business Relation API / Manage VNO SECS Details API
+      - Manage Maas Details API
+      - IPM Service View API
+      - RS Override API
+      - Service Impact TX FLT API
+      - CRMZ APIs
+      - DNB API
+    moveIot:
+    - MOVE SIM Connect API
+    - MOVE IOT Connect API
+    - Move Access Token API
+    digoCpaas:
+    - Programmable Voice (USA)
+    - Programmable Voice (India)
+    - Email (Contact, Template, Email, Campaign, Report)
+    - Authenticate - Multi Factor Authentication (Send, Verify, Control, Session Detail Records, Limit, Workflow)
+    - Authenticate - One Tap Authentication (Initiate, Verify)
+    - WhatsApp (Send Message, Media, Reporting, Webhook Payload)
+    - Number Management (Numbers & Reservations, Orders, Products & Connections, Document Management)
+    - SMS (Send SMS, Campaign Management, Account Administration, CDR Report, Usage Report)
+    - Anonymize (masking sessions)
+    - Engage (bulk messaging, reports, DLR callbacks)
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: true
+    note: >-
+      All three harvested Swagger 2.0 documents describe HTTP/REST operations.
+      No host or scheme is declared in the documents themselves.
+  - protocol: GraphQL
+    documented: false
+  - protocol: gRPC
+    documented: false
+  - protocol: WebSocket
+    scheme: wss
+    documented: false
+  - protocol: Webhooks
+    documented: false
+    note: A "Horizontal Webhook API" is named in the gated catalogue; no public event catalog.
+  corporate:
+    headquarters: Mumbai, India
+    homeMarket: India
+    parent: Tata Group (Tata Sons Private Limited)
+    subsidiariesRelevantToAPIs:
+    - name: Kaleyra
+      acquired: '2023-10'
+      note: >-
+        CPaaS/UCaaS/CCaaS arm; self-serve developer docs at developers.kaleyra.io
+        carry no Tata branding; profiled separately in this network.
+    notToBeConfusedWith:
+    - Tata Elxsi (design & engineering services; holds the GSMA Fusion Open Gateway MoU)
+    - Tata Teleservices (Indian enterprise telecom)
+    - Tata Consultancy Services
