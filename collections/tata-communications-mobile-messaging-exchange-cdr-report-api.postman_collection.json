@@ -1,0 +1,580 @@
+{
+  "item": [
+    {
+      "id": "b53dc115-fdde-4071-9639-4e65ccb488b0",
+      "name": "TOP 25 CDR by account Id & Time Frame",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "18c16356-8782-4c5b-b75b-cd073bbacd2a",
+          "name": "message logs for a specific account Id & time frame",
+          "request": {
+            "name": "message logs for a specific account Id & time frame",
+            "description": {},
+            "url": {
+              "path": [
+                "CDR",
+                "account",
+                ":accountId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "fromDate",
+                  "value": "<string>",
+                  "description": "(Required) This is the from date in format of dd-MM-yyyy HH:mm:SS (Ex. 03-03-2020 07:09:00) which customer account usage is available for usage report."
+                },
+                {
+                  "disabled": false,
+                  "key": "toDate",
+                  "value": "<string>",
+                  "description": "(Required) This is the to date in in format of dd-MM-yyyy HH:mm:SS (Ex. 03-03-2020 07:09:00) which customer account usage is available for usage report."
+                },
+                {
+                  "disabled": false,
+                  "key": "pageNo",
+                  "value": "0",
+                  "description": "Skip Number of records for paging"
+                },
+                {
+                  "disabled": false,
+                  "key": "pageSize",
+                  "value": "25",
+                  "description": "Number of records to return"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "accountId",
+                  "description": "(Required) This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "574b1b6b-222e-47df-9acd-20617ead8832",
+              "name": "Successfully retrieved data.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "account",
+                    ":accountId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "fromDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "toDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "pageNo",
+                      "value": "0"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "25"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "accountId",
+                      "description": "(Required) This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"totalItems\": 100,\n  \"displayItems\": 25,\n  \"items\": [\n    {\n      \"requestTime\": \"2018-08-22T06:05:00+00:00\",\n      \"lastDeliveredTime\": \"2018-08-22T06:05:00+00:00\",\n      \"messageId\": \"b94ef907-7778-442c-9743-fe02238c6977\",\n      \"accountId\": \"35317-2\",\n      \"destinationId\": \"1-245-0\",\n      \"destinationCountry\": \"unknown\",\n      \"destinationAddress\": \"919961986196\",\n      \"originatingAddress\": \"LNKDIN\",\n      \"attemptedStatus\": \"Success\",\n      \"submittedStatus\": \"Success\",\n      \"deliveredStatus\": \"Success\",\n      \"errorCode\": 0,\n      \"errorDescription\": \"Success\"\n    },\n    {\n      \"requestTime\": \"2018-08-22T06:05:00+00:00\",\n      \"lastDeliveredTime\": \"2018-08-22T06:05:00+00:00\",\n      \"messageId\": \"b94ef907-7778-442c-9743-fe02238c6977\",\n      \"accountId\": \"35317-2\",\n      \"destinationId\": \"1-245-0\",\n      \"destinationCountry\": \"unknown\",\n      \"destinationAddress\": \"919961986196\",\n      \"originatingAddress\": \"LNKDIN\",\n      \"attemptedStatus\": \"Success\",\n      \"submittedStatus\": \"Success\",\n      \"deliveredStatus\": \"Success\",\n      \"errorCode\": 0,\n      \"errorDescription\": \"Success\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1134c69b-c26a-4bf5-885a-a4fa87a40d8b",
+              "name": "Request is semantically incorrect or missing required parameters. | Error: CDRs for the selected period are not loaded because the SMS retry period of 72 hours is not completed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "account",
+                    ":accountId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "fromDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "toDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "pageNo",
+                      "value": "0"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "25"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "accountId",
+                      "description": "(Required) This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "2b638ea2-ac66-40cb-b2cc-ef0a769d8ecc",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "account",
+                    ":accountId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "fromDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "toDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "pageNo",
+                      "value": "0"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "25"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "accountId",
+                      "description": "(Required) This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e9dfb099-5d2c-41f7-ad91-1a52edc66436",
+              "name": "Internal Server Error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "account",
+                    ":accountId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "fromDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "toDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "pageNo",
+                      "value": "0"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "25"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "accountId",
+                      "description": "(Required) This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "126e4a9a-dafb-40a3-800d-d8ad70c6f140",
+      "name": "CDR by Customer Message Id",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6fb4c457-ddae-4af1-98e7-21f123869472",
+          "name": "message logs for a message ID",
+          "request": {
+            "name": "message logs for a message ID",
+            "description": {},
+            "url": {
+              "path": [
+                "CDR",
+                "message",
+                ":messageId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "messageId",
+                  "description": "(Required) This is the customer Message Id."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "62a8398e-2898-4b6d-83d3-f029feb012a3",
+              "name": "Successfully retrieved data.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "message",
+                    ":messageId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "messageId",
+                      "description": "(Required) This is the customer Message Id."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"requestTime\": \"2018-08-22T06:05:00+00:00\",\n  \"lastDeliveredTime\": \"2018-08-22T06:05:00+00:00\",\n  \"messageId\": \"b94ef907-7778-442c-9743-fe02238c6977\",\n  \"accountId\": \"35317-2\",\n  \"destinationId\": \"1-245-0\",\n  \"destinationCountry\": \"unknown\",\n  \"destinationAddress\": \"919961986196\",\n  \"originatingAddress\": \"LNKDIN\",\n  \"attemptedStatus\": \"Success\",\n  \"submittedStatus\": \"Success\",\n  \"deliveredStatus\": \"Success\",\n  \"errorCode\": 0,\n  \"errorDescription\": \"Success\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "72b7e3ef-5e14-4bd7-be80-c6c134c72908",
+              "name": "Request is semantically incorrect or missing required parameters. | Error: CDRs for the selected period are not loaded because the SMS retry period of 72 hours is not completed",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "message",
+                    ":messageId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "messageId",
+                      "description": "(Required) This is the customer Message Id."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8605af92-d05f-4609-bc5b-215cae69cdd5",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "message",
+                    ":messageId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "messageId",
+                      "description": "(Required) This is the customer Message Id."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c0e1ca15-4ec9-4790-94a4-06e0b45f1945",
+              "name": "Internal Server Error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CDR",
+                    "message",
+                    ":messageId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "messageId",
+                      "description": "(Required) This is the customer Message Id."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "27e70ba2-a326-403b-8063-54ed52fb8023",
+    "name": "Mobile Messaging Exchange - CDR Report API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Mobile Messaging Exchange - CDR Report API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "TOP 25 CDR by account Id & Time Frame",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "message logs for a specific account Id & time frame",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/CDR/account/:accountId",
+            "params": [
+              {
+                "name": "accountId",
+                "value": "",
+                "type": "path",
+                "description": "This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId."
+              },
+              {
+                "name": "fromDate",
+                "value": "",
+                "type": "query",
+                "description": "This is the from date in format of dd-MM-yyyy HH:mm:SS (Ex. 03-03-2020 07:09:00) which customer account usage is available for usage report."
+              },
+              {
+                "name": "toDate",
+                "value": "",
+                "type": "query",
+                "description": "This is the to date in in format of dd-MM-yyyy HH:mm:SS (Ex. 03-03-2020 07:09:00) which customer account usage is available for usage report."
+              },
+              {
+                "name": "pageNo",
+                "value": "",
+                "type": "query",
+                "description": "Skip Number of records for paging"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query",
+                "description": "Number of records to return"
+              }
+            ]
+          },
+          "docs": "message logs for a specific account Id & time frame"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "CDR by Customer Message Id",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "message logs for a message ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/CDR/message/:messageId",
+            "params": [
+              {
+                "name": "messageId",
+                "value": "",
+                "type": "path",
+                "description": "This is the customer Message Id."
+              }
+            ]
+          },
+          "docs": "message logs for a message ID"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

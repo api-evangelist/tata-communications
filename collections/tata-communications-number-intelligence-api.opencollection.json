@@ -1,0 +1,74 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Number Intelligence API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Number Intelligence",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "number lookup details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/number/:phnum",
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "phnum",
+                "value": "",
+                "type": "path",
+                "description": "subscriber number either fixed or mobile"
+              }
+            ]
+          },
+          "docs": "get the routing details of a given number"
+        },
+        {
+          "info": {
+            "name": "number lookup records of the user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/records",
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "pageNo",
+                "value": "",
+                "type": "query",
+                "description": "page number of the record"
+              },
+              {
+                "name": "pageSize",
+                "value": "",
+                "type": "query",
+                "description": "total records in a page. By default, page size would be 100. Maximum allowed size is 100"
+              }
+            ]
+          },
+          "docs": "get the number lookup history transactions of the user going back to last 180 days maximum"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

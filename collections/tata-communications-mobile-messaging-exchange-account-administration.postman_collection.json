@@ -1,0 +1,324 @@
+{
+  "item": [
+    {
+      "id": "160df764-04c3-4435-a923-d5d53ec0cd1f",
+      "name": "getdestination",
+      "request": {
+        "name": "getdestination",
+        "description": {},
+        "url": {
+          "path": [
+            "destination"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "accountId",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "mnc",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "mcc",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "header": [
+          {
+            "disabled": false,
+            "key": "appid",
+            "value": "<string>",
+            "description": ""
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "09a5277b-3bfd-46f7-a286-a1466f0eda45",
+          "name": " ",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "destination"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "accountId",
+                  "value": "<string>"
+                },
+                {
+                  "key": "mnc",
+                  "value": "<string>"
+                },
+                {
+                  "key": "mcc",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "key": "appid",
+                "value": "<string>",
+                "description": ""
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c4b82a97-1fee-4a3c-bdf9-00726583198d",
+      "name": "getreport",
+      "request": {
+        "name": "getreport",
+        "description": {},
+        "url": {
+          "path": [
+            "report"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "accountId",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "header": [
+          {
+            "disabled": false,
+            "key": "appid",
+            "value": "<string>",
+            "description": ""
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ae637ee8-61eb-40da-95e1-dc7cec2e747f",
+          "name": " ",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "report"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "accountId",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "key": "appid",
+                "value": "<string>",
+                "description": ""
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "1d699fdc-7fd3-422a-9171-4dc880194a1e",
+      "name": "postsender Id",
+      "request": {
+        "name": "postsender Id",
+        "description": {},
+        "url": {
+          "path": [
+            "senderId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "accountId",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "mnc",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "mcc",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "header": [
+          {
+            "disabled": false,
+            "key": "appid",
+            "value": "<string>",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "f7966bbc-eaba-49e6-8eed-7fe6a260b6fa",
+          "name": " ",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "senderId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "accountId",
+                  "value": "<string>"
+                },
+                {
+                  "key": "mnc",
+                  "value": "<string>"
+                },
+                {
+                  "key": "mcc",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "disabled": false,
+                "key": "appid",
+                "value": "<string>",
+                "description": ""
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "c987c7b6-81a9-4283-bb5e-ceadf679fc72",
+    "name": "Mobile Messaging Exchange - Account Administration ",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "This API manage account and lookup reports.",
+      "type": "text/plain"
+    }
+  }
+}

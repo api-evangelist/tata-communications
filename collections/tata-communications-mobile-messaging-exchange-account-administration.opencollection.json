@@ -1,0 +1,99 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Mobile Messaging Exchange - Account Administration ",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "getdestination",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "{{baseUrl}}/destination",
+        "headers": [
+          {
+            "name": "appid",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "accountId",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "mnc",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "mcc",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "name": "getreport",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "{{baseUrl}}/report",
+        "headers": [
+          {
+            "name": "appid",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "accountId",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "name": "postsenderId",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "{{baseUrl}}/senderId",
+        "headers": [
+          {
+            "name": "appid",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "accountId",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "mnc",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "mcc",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      }
+    }
+  ],
+  "bundled": true
+}

@@ -121,3 +121,9 @@ tools:
   - name: messageId
     in: path
     required: true
+deployment:
+  mode: none
+  verified: derived
+  tools: 7
+  checked: '2026-08-12'
+  source: catalog MCP census
