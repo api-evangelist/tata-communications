@@ -130,6 +130,12 @@ apis:
   - SIM Management
   - eSIM
   - Connectivity
+  - Move
+  tags_raw:
+  - IoT
+  - SIM Management
+  - eSIM
+  - Connectivity
   - MOVE
   properties:
   - type: Documentation
@@ -150,6 +156,11 @@ apis:
   - IoT
   - Connectivity Management
   - Cellular
+  - Move
+  tags_raw:
+  - IoT
+  - Connectivity Management
+  - Cellular
   - MOVE
   properties:
   - type: Documentation
@@ -166,6 +177,9 @@ apis:
   humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
   baseURL: https://move-external-apim-prod.azure-api.net
   tags:
+  - Authentication
+  - Move
+  tags_raw:
   - Authentication
   - OAuth 2.0
   - MOVE
