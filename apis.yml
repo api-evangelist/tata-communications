@@ -42,87 +42,13 @@ created: '2026-07-25'
 modified: '2026-07-25'
 specificationVersion: '0.23'
 apis:
-- aid: tata-communications:tata-communications-number-intelligence-api
-  name: Number Intelligence API
-  description: >-
-    Queries the number-lookup details of any E.164 number and returns subscriber
-    type, the current and parent network, the port-corrected service provider
-    network (SPN), and MCC/MNC when the number is mobile, so a sender can decide
-    whether to route traffic to a fixed or mobile destination. Publicly visible
-    on the Tata Communications developer portal with a downloadable Swagger 2.0
-    document; 2 operations across 2 paths.
-  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
-  tags:
-  - Number Intelligence
-  - Number Portability
-  - Routing
-  - Wholesale
-  properties:
-  - type: OpenAPI
-    url: openapi/tata-communications-number-intelligence-api.json
-  - type: Overlay
-    url: overlays/tata-communications-number-intelligence-api-overlay.yaml
-  - type: Documentation
-    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
-  - type: APIReference
-    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
-- aid: tata-communications:tata-communications-mobile-messaging-exchange-account-administration
-  name: Mobile Messaging Exchange - Account Administration
-  description: >-
-    Account administration and lookup reporting for the Tata Communications
-    Mobile Messaging Exchange (A2P/wholesale SMS) platform, covering destination
-    lookup, report retrieval, and sender-ID registration. Publicly visible on the
-    Tata Communications developer portal with a downloadable Swagger 2.0
-    document; 3 operations across 3 paths.
-  humanURL: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
-  tags:
-  - Messaging
-  - SMS
-  - Account Administration
-  - Sender ID
-  - Wholesale
-  properties:
-  - type: OpenAPI
-    url: openapi/tata-communications-mobile-messaging-exchange-account-administration.json
-  - type: Overlay
-    url: overlays/tata-communications-mobile-messaging-exchange-account-administration-overlay.yaml
-  - type: Documentation
-    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
-  - type: APIReference
-    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
-- aid: tata-communications:tata-communications-mobile-messaging-exchange-cdr-report-api
-  name: Mobile Messaging Exchange - CDR Report API
-  description: >-
-    Call/message detail record reporting for the Tata Communications Mobile
-    Messaging Exchange, returning message logs for a given account ID and time
-    frame or for a single customer message ID. Publicly visible on the Tata
-    Communications developer portal with a downloadable Swagger 2.0 document;
-    2 operations across 2 paths.
-  humanURL: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
-  tags:
-  - Messaging
-  - SMS
-  - CDR
-  - Reporting
-  - Wholesale
-  properties:
-  - type: OpenAPI
-    url: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
-  - type: Overlay
-    url: overlays/tata-communications-mobile-messaging-exchange-cdr-report-api-overlay.yaml
-  - type: Documentation
-    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
-  - type: APIReference
-    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
 - aid: tata-communications:tata-communications-move-sim-connect-api
   name: MOVE SIM Connect API
   description: >-
-    Full-service API for the Tata Communications MOVE platform SIM Connect
-    product, supporting management of a tenancy — its key entities, services, and
-    the products the tenancy avails. Published on the separate MOVE developer
-    portal hosted on Azure API Management; the API reference and any machine-
-    readable definition require portal sign-in, and anonymous calls to the
-    catalogue endpoint return 401.
+    Full-service API for the Tata Communications MOVE platform SIM Connect product, supporting management
+    of a tenancy — its key entities, services, and the products the tenancy avails. Published on the separate
+    MOVE developer portal hosted on Azure API Management; the API reference and any machine- readable
+    definition require portal sign-in, and anonymous calls to the catalogue endpoint return 401.
   humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-api
   baseURL: https://move-external-apim-prod.azure-api.net
   tags:
@@ -145,10 +71,9 @@ apis:
 - aid: tata-communications:tata-communications-move-iot-connect-api
   name: MOVE IOT Connect API
   description: >-
-    Tata Communications MOVE platform IOT API, permitting management of a tenancy
-    of the MOVE IOT Connect product including its key entities, services, and
-    subscribed products. Published on the MOVE Azure API Management developer
-    portal; the reference is behind sign-in and no anonymous machine-readable
+    Tata Communications MOVE platform IOT API, permitting management of a tenancy of the MOVE IOT Connect
+    product including its key entities, services, and subscribed products. Published on the MOVE Azure
+    API Management developer portal; the reference is behind sign-in and no anonymous machine-readable
     definition is served.
   humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-iot-api
   baseURL: https://move-external-apim-prod.azure-api.net
@@ -170,11 +95,11 @@ apis:
 - aid: tata-communications:tata-communications-move-access-token-api
   name: MOVE Access Token API
   description: >-
-    Issues an OAuth 2.0 bearer access token used to call the other Tata
-    Communications MOVE APIs. Published on the MOVE Azure API Management
-    developer portal; the reference is behind sign-in and no anonymous
+    Issues an OAuth 2.0 bearer access token used to call the other Tata Communications MOVE APIs. Published
+    on the MOVE Azure API Management developer portal; the reference is behind sign-in and no anonymous
     machine-readable definition is served.
-  humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+  humanURL: >-
+    https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
   baseURL: https://move-external-apim-prod.azure-api.net
   tags:
   - Authentication
@@ -185,10 +110,173 @@ apis:
   - MOVE
   properties:
   - type: Documentation
-    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+    url: >-
+      https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
   - type: APIReference
-    url: https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+    url: >-
+      https://move-external-apim-prod.developer.azure-api.net/api-details#api=tata-move-api-access-manager
+- aid: tata-communications:tata-communications-cdr-by-customer-message-id-api
+  name: Tata Communications CDR by Customer Message Id API
+  description: >-
+    The CDR by Customer Message Id API from Tata Communications — 1 operation(s) for cdr by customer message
+    id.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  baseURL: https://move-external-apim-prod.azure-api.net
+  tags:
+  - CDR by Customer Message Id
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-cdr-by-customer-message-id-api-openapi.yml
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
+- aid: tata-communications:tata-communications-destination-api
+  name: Tata Communications Destination API
+  description: The Destination API from Tata Communications — 1 operation(s) for destination.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  baseURL: https://move-external-apim-prod.azure-api.net
+  tags:
+  - Destination
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-destination-api-openapi.yml
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
+- aid: tata-communications:tata-communications-number-intelligence-api
+  name: Tata Communications Number Intelligence API
+  description: >-
+    The Number Intelligence API from Tata Communications — 2 operation(s) for number intelligence.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  baseURL: https://move-external-apim-prod.azure-api.net
+  tags:
+  - Number Intelligence
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-number-intelligence-api-openapi.yml
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
+- aid: tata-communications:tata-communications-report-api
+  name: Tata Communications Report API
+  description: The Report API from Tata Communications — 1 operation(s) for report.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  baseURL: https://move-external-apim-prod.azure-api.net
+  tags:
+  - Report
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-report-api-openapi.yml
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
+- aid: tata-communications:tata-communications-senderid-api
+  name: Tata Communications Sender ID API
+  description: The SenderId API from Tata Communications — 1 operation(s) for senderid.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  baseURL: https://move-external-apim-prod.azure-api.net
+  tags:
+  - SenderId
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-senderid-api-openapi.yml
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
+- aid: tata-communications:tata-communications-top-25-cdr-by-account-id-time-frame-api
+  name: Tata Communications TOP 25 CDR by account Id & Time Frame API
+  description: >-
+    The TOP 25 CDR by account Id & Time Frame API from Tata Communications — 1 operation(s) for top 25
+    cdr by account id & time frame.
+  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  baseURL: https://move-external-apim-prod.azure-api.net
+  tags:
+  - TOP 25 CDR by account Id & Time Frame
+  properties:
+  - type: OpenAPI
+    url: openapi/tata-communications-top-25-cdr-by-account-id-time-frame-api-openapi.yml
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl/versions/9c14d794-576f-4d76-a930-7ba00f38c714.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/5d771bb7-97eb-4e36-bf9d-9edd3d51baa8.tcl/versions/976eb113-e9b9-4af7-8e54-842fde470bb1.tcl
+  - type: Documentation
+    url: https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl
+  - type: APIReference
+    url: >-
+      https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
 common:
+- type: Overlay
+  url: overlays/tata-communications-number-intelligence-api-overlay.yaml
+- type: Overlay
+  url: overlays/tata-communications-mobile-messaging-exchange-account-administration-overlay.yaml
+- type: Overlay
+  url: overlays/tata-communications-mobile-messaging-exchange-cdr-report-api-overlay.yaml
 - type: LLMsTxt
   url: llms/tata-communications-llms.txt
 - type: MCPServer
