@@ -1,0 +1,23 @@
+openapi: 3.2.0
+info:
+  description: This API manage account and lookup reports.
+  version: '1.0'
+  title: Mobile Messaging Exchange - Account Administration Report API
+tags:
+- name: Report
+paths:
+  /report:
+    get:
+      operationId: getreport
+      parameters:
+      - name: accountId
+        in: query
+        required: false
+      - name: appid
+        in: header
+        required: false
+      responses:
+        default:
+          description: ' '
+      tags:
+      - Report

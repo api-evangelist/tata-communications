@@ -1,0 +1,149 @@
+openapi: 3.2.0
+info:
+  version: '1.0'
+  title: Mobile Messaging Exchange - CDR Report TOP 25 CDR by account Id & Time Frame API
+tags:
+- name: TOP 25 CDR by account Id & Time Frame
+paths:
+  /CDR/account/{accountId}:
+    get:
+      tags:
+      - TOP 25 CDR by account Id & Time Frame
+      summary: message logs for a specific account Id & time frame
+      operationId: top_25_cdr
+      parameters:
+      - name: accountId
+        in: path
+        description: This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId.
+        required: true
+        schema:
+          type: string
+      - name: fromDate
+        in: query
+        description: This is the from date in format of dd-MM-yyyy HH:mm:SS (Ex. 03-03-2020 07:09:00) which customer account usage is available for usage report.
+        required: true
+        schema:
+          type: string
+      - name: toDate
+        in: query
+        description: This is the to date in in format of dd-MM-yyyy HH:mm:SS (Ex. 03-03-2020 07:09:00) which customer account usage is available for usage report.
+        required: true
+        schema:
+          type: string
+      - name: pageNo
+        in: query
+        description: Skip Number of records for paging
+        required: false
+        schema:
+          type: number
+          default: 0.0
+      - name: pageSize
+        in: query
+        description: Number of records to return
+        required: false
+        schema:
+          type: number
+          default: 25.0
+      responses:
+        '200':
+          description: Successfully retrieved data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OutputList'
+        '400':
+          description: 'Request is semantically incorrect or missing required parameters. | Error: CDRs for the selected period are not loaded because the SMS retry period of 72 hours is not completed'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    OutputList:
+      properties:
+        totalItems:
+          type: number
+          example: 100.0
+          description: Total No. of Items available
+        displayItems:
+          type: number
+          example: 25.0
+          description: Total No. of Items displayed
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/SuccessResponse'
+    ErrorResponse:
+      properties:
+        status:
+          type: string
+          description: Http status of the response
+        message:
+          type: string
+          description: Error description
+    SuccessResponse:
+      properties:
+        requestTime:
+          type: string
+          example: '2018-08-22T06:05:00+00:00'
+          description: This is the time when request is come to the MMX Hub.
+        lastDeliveredTime:
+          type: string
+          example: '2018-08-22T06:05:00+00:00'
+          description: This is the Last delivered time.
+        messageId:
+          type: string
+          example: b94ef907-7778-442c-9743-fe02238c6977
+          description: This is the internal unique Message Id.
+        accountId:
+          type: string
+          example: 35317-2
+          description: This is the customer account id assigned to the customer at the time of onboarding. User can specify one or more custAccountId.
+        destinationId:
+          type: string
+          example: 1-245-0
+          description: This is the destination vpc
+        destinationCountry:
+          type: string
+          example: unknown
+          description: This is the destination Country
+        destinationAddress:
+          type: string
+          example: '919961986196'
+          description: This is the Destination Address.
+        originatingAddress:
+          type: string
+          example: LNKDIN
+          description: This is the Originating Address.
+        attemptedStatus:
+          type: string
+          example: Success
+          description: This is the status of attempted message.
+        submittedStatus:
+          type: string
+          example: Success
+          description: This is the status of submitted message.
+        deliveredStatus:
+          type: string
+          example: Success
+          description: This is the status of delivered message.
+        errorCode:
+          type: number
+          example: 0.0
+          description: This is the error code.
+        errorDescription:
+          type: string
+          example: Success
+          description: This is the error description.

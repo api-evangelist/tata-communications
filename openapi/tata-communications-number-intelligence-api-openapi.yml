@@ -1,0 +1,264 @@
+openapi: 3.2.0
+info:
+  description: Query the number lookup details of any E.164 number. It provides the type of subscriber, current and parent network and MCCMNC if type Mobile. It returns the type of connection i.e fixed or mobile which allows the customer to send traffic to mobile sub.
+  version: '1.0'
+  title: Number Intelligence API
+tags:
+- name: Number Intelligence
+paths:
+  /number/{phnum}:
+    get:
+      tags:
+      - Number Intelligence
+      summary: number lookup details
+      description: get the routing details of a given number
+      operationId: numberLookupDetails
+      parameters:
+      - name: Authorization
+        in: header
+        description: used for authentication in Akana
+        required: true
+        schema:
+          type: string
+      - name: phnum
+        in: path
+        description: subscriber number either fixed or mobile
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: success response
+          content:
+            application/json:
+              schema:
+                properties:
+                  queriedNumber:
+                    type: string
+                    description: subscriber number
+                  result:
+                    type: object
+                    description: response object
+                    properties:
+                      npdi:
+                        type: string
+                        description: Number Portability Dip Indicator
+                      spn:
+                        type: string
+                        description: Service Provider Network Represents the identity of the port-corrected operator serving the TN
+                      altSpn:
+                        type: string
+                        description: Alternative SPN Represents the identity of the port-corrected operator serving the TN when the SPN alone is insufficient
+                      mcc:
+                        type: string
+                        description: Mobile Country Code; a three-digit code assigned to a country that is the first part of the identity as defined in ITU E.212 Recommendation
+                      mnc:
+                        type: string
+                        description: Mobile Network Code; a two or three-digit code under an MCC assigned to a Mobile Operator that is the second part of the identity as defined in ITU E.212 Recommendation.
+                      name:
+                        type: string
+                        description: 'Mobile operator name or not.    '
+                      queryStatus:
+                        type: string
+                        description: Query Status Code
+                      description:
+                        type: string
+                        description: Query Status Description
+                description: number lookup attributes generated
+        '400':
+          description: Request formatting error
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '401':
+          description: Customer couldn't be authenticated
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '500':
+          description: Service Unavailable
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '403':
+          description: Customer has been authenticated but customer isn't having access on the requested data
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '404':
+          description: No data present for the queried TN
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+  /records:
+    get:
+      tags:
+      - Number Intelligence
+      summary: number lookup records of the user
+      description: get the number lookup history transactions of the user going back to last 180 days maximum
+      operationId: numberLookupRecords
+      parameters:
+      - name: Authorization
+        in: header
+        description: used for authentication in Akana
+        required: true
+        schema:
+          type: string
+      - name: pageNo
+        in: query
+        description: page number of the record
+        required: false
+        schema:
+          type: integer
+      - name: pageSize
+        in: query
+        description: total records in a page. By default, page size would be 100. Maximum allowed size is 100
+        required: false
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: success response
+          content:
+            application/json:
+              schema:
+                properties:
+                  queriedUserid:
+                    type: string
+                    description: akana appid of the user
+                  totalRecords:
+                    type: integer
+                    description: total number of records of the user
+                  result:
+                    type: array
+                    description: response array
+                    items:
+                      type: object
+                      description: response object
+                      properties:
+                        timestamp:
+                          type: string
+                          description: timestamp of the transaction. for eg. 10 Jan 2021 12:12:09
+                        number:
+                          type: string
+                          description: telephone number
+                        npdi:
+                          type: string
+                          description: Number Portability Dip Indicator
+                        spn:
+                          type: string
+                          description: Service Provider Network Represents the identity of the port-corrected operator serving the TN
+                        altSpn:
+                          type: string
+                          description: Alternative SPN Represents the identity of the port-corrected operator serving the TN when the SPN alone is insufficient
+                        mcc:
+                          type: string
+                          description: Mobile Country Code; a three-digit code assigned to a country that is the first part of the identity as defined in ITU E.212 Recommendation
+                        mnc:
+                          type: string
+                          description: Mobile Network Code; a two or three-digit code under an MCC assigned to a Mobile Operator that is the second part of the identity as defined in ITU E.212 Recommendation.
+                        name:
+                          type: string
+                          description: 'Mobile operator name or not.    '
+                        queryStatus:
+                          type: string
+                          description: Query Status Code
+                        description:
+                          type: string
+                          description: Query Status Description
+                description: number lookup attributes generated
+        '400':
+          description: Request formatting error
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '401':
+          description: Customer couldn't be authenticated
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '500':
+          description: Service Unavailable
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '403':
+          description: Customer has been authenticated but customer isn't having access on the requested data
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text
+        '404':
+          description: No data present for the queried TN
+          content:
+            application/json:
+              schema:
+                properties:
+                  responseCode:
+                    type: integer
+                    description: error status code
+                  responseText:
+                    type: string
+                    description: error message text

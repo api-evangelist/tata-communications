@@ -1,0 +1,29 @@
+openapi: 3.2.0
+info:
+  description: This API manage account and lookup reports.
+  version: '1.0'
+  title: Mobile Messaging Exchange - Account Administration Destination API
+tags:
+- name: Destination
+paths:
+  /destination:
+    get:
+      operationId: getdestination
+      parameters:
+      - name: accountId
+        in: query
+        required: false
+      - name: mnc
+        in: query
+        required: false
+      - name: appid
+        in: header
+        required: false
+      - name: mcc
+        in: query
+        required: false
+      responses:
+        default:
+          description: ' '
+      tags:
+      - Destination
