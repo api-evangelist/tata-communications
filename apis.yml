@@ -67,7 +67,7 @@ apis:
   - SIM Management
   - eSIM
   - Connectivity
-  - Move
+  - MOVE
   tags_raw:
   - IoT
   - SIM Management
@@ -92,7 +92,7 @@ apis:
   - IoT
   - Connectivity Management
   - Cellular
-  - Move
+  - MOVE
   tags_raw:
   - IoT
   - Connectivity Management
@@ -114,7 +114,7 @@ apis:
   baseURL: https://move-external-apim-prod.azure-api.net
   tags:
   - Authentication
-  - Move
+  - MOVE
   tags_raw:
   - Authentication
   - OAuth 2.0
@@ -235,6 +235,8 @@ apis:
   humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
   baseURL: https://move-external-apim-prod.azure-api.net
   tags:
+  - Sender ID
+  tags_raw:
   - SenderId
   properties:
   - type: OpenAPI
@@ -261,7 +263,8 @@ apis:
     cdr by account id & time frame.
   humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
   baseURL: https://move-external-apim-prod.azure-api.net
-  tags:
+  tags: []
+  tags_raw:
   - TOP 25 CDR by account Id & Time Frame
   properties:
   - type: OpenAPI
