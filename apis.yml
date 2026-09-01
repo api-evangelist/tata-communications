@@ -67,7 +67,7 @@ apis:
   - SIM Management
   - eSIM
   - Connectivity
-  - MOVE
+  - Move
   tags_raw:
   - IoT
   - SIM Management
@@ -92,7 +92,7 @@ apis:
   - IoT
   - Connectivity Management
   - Cellular
-  - MOVE
+  - Move
   tags_raw:
   - IoT
   - Connectivity Management
@@ -114,7 +114,7 @@ apis:
   baseURL: https://move-external-apim-prod.azure-api.net
   tags:
   - Authentication
-  - MOVE
+  - Move
   tags_raw:
   - Authentication
   - OAuth 2.0
