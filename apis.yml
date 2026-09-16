@@ -243,18 +243,19 @@ apis:
   - type: APIReference
     url: >-
       https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
-- aid: tata-communications:tata-communications-senderid-api
-  name: Tata Communications Sender ID API
-  description: The SenderId API from Tata Communications — 1 operation(s) for senderid.
+- aid: tata-communications:tata-communications-top-25-cdr-by-account-id-time-frame-api
+  name: Tata Communications TOP 25 CDR by account Id & Time Frame API
+  description: >-
+    The TOP 25 CDR by account Id & Time Frame API from Tata Communications — 1 operation(s) for top 25
+    cdr by account id & time frame.
   humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
   baseURL: https://move-external-apim-prod.azure-api.net
-  tags:
-  - Sender ID
+  tags: []
   tags_raw:
-  - SenderId
+  - TOP 25 CDR by account Id & Time Frame
   properties:
   - type: OpenAPI
-    url: openapi/tata-communications-senderid-api-openapi.yml
+    url: openapi/tata-communications-top-25-cdr-by-account-id-time-frame-api-openapi.yml
   - type: Documentation
     url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
   - type: APIReference
@@ -270,19 +271,16 @@ apis:
   - type: APIReference
     url: >-
       https://developer.tatacommunications.com/#/api/eef35c15-1259-4b32-8d00-19b8b913ce2d.tcl/versions/70989384-2a73-44d3-8925-8ca108c061b0.tcl
-- aid: tata-communications:tata-communications-top-25-cdr-by-account-id-time-frame-api
-  name: Tata Communications TOP 25 CDR by account Id & Time Frame API
-  description: >-
-    The TOP 25 CDR by account Id & Time Frame API from Tata Communications — 1 operation(s) for top 25
-    cdr by account id & time frame.
-  humanURL: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
+- aid: tata-communications:tata-communications-sender-id-api
+  name: Tata Communications Sender ID API
+  description: The Sender ID API from Tata Communications — 1 operation(s) for sender id.
+  humanURL: https://move-external-apim-prod.developer.azure-api.net/api-details#api=move-api
   baseURL: https://move-external-apim-prod.azure-api.net
-  tags: []
-  tags_raw:
-  - TOP 25 CDR by account Id & Time Frame
+  tags:
+  - Sender ID
   properties:
   - type: OpenAPI
-    url: openapi/tata-communications-top-25-cdr-by-account-id-time-frame-api-openapi.yml
+    url: openapi/tata-communications-sender-id-api-openapi.yml
   - type: Documentation
     url: https://developer.tatacommunications.com/#/api/0cd4be86-167c-4770-9459-e68fe925f63a.tcl
   - type: APIReference
