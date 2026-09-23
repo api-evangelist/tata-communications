@@ -2,7 +2,7 @@ openapi: 3.2.0
 info:
   description: This API manage account and lookup reports.
   version: '1.0'
-  title: Mobile Messaging Exchange - Account Administration Destination API
+  title: Mobile Messaging Exchange - Account Administration…
 tags:
 - name: Destination
 paths:
@@ -27,3 +27,5 @@ paths:
           description: ' '
       tags:
       - Destination
+      summary: Getdestination
+      x-summary-source: derived

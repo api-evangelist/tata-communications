@@ -1,7 +1,7 @@
 openapi: 3.2.0
 info:
   version: '1.0'
-  title: Mobile Messaging Exchange - CDR Report TOP 25 CDR by account Id & Time Frame API
+  title: Mobile Messaging Exchange - CDR Report TOP 25 CDR by…
 tags:
 - name: TOP 25 CDR by account Id & Time Frame
 paths:
@@ -71,6 +71,14 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
+    ErrorResponse:
+      properties:
+        status:
+          type: string
+          description: Http status of the response
+        message:
+          type: string
+          description: Error description
     OutputList:
       properties:
         totalItems:
@@ -85,14 +93,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/SuccessResponse'
-    ErrorResponse:
-      properties:
-        status:
-          type: string
-          description: Http status of the response
-        message:
-          type: string
-          description: Error description
     SuccessResponse:
       properties:
         requestTime:

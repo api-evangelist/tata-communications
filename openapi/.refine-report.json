@@ -1,0 +1,46 @@
+{
+  "provider": "tata-communications",
+  "sources": [
+    "_original/tata-communications-mobile-messaging-exchange-account-administration.json",
+    "_original/tata-communications-mobile-messaging-exchange-cdr-report-api.json",
+    "_original/tata-communications-number-intelligence-api.json"
+  ],
+  "outputs": [
+    "tata-communications-destination-api-openapi.yml",
+    "tata-communications-report-api-openapi.yml",
+    "tata-communications-senderid-api-openapi.yml",
+    "tata-communications-cdr-by-customer-message-id-api-openapi.yml",
+    "tata-communications-top-25-cdr-by-account-id-time-frame-api-openapi.yml",
+    "tata-communications-number-intelligence-api-openapi.yml"
+  ],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (3 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: tagged paths GET /destination -> Destination",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: tagged paths GET /report -> Report",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: tagged paths POST /senderId -> SenderId",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: declared missing tag: Destination",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: declared missing tag: Report",
+    "tata-communications-mobile-messaging-exchange-account-administration.json: declared missing tag: SenderId",
+    "tata-communications-mobile-messaging-exchange-cdr-report-api.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "tata-communications-mobile-messaging-exchange-cdr-report-api.json: declared missing tag: CDR by Customer Message Id",
+    "tata-communications-mobile-messaging-exchange-cdr-report-api.json: declared missing tag: TOP 25 CDR by account Id & Time Frame",
+    "tata-communications-number-intelligence-api.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "tata-communications-number-intelligence-api.json: declared missing tag: Number Intelligence",
+    "superseded outputs removed: tata-communications-sender-id-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 9 total)"
+  ],
+  "skipped": [
+    "tata-communications-cdr-by-customer-message-id-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tata-communications-destination-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tata-communications-number-intelligence-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tata-communications-report-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tata-communications-sender-id-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "tata-communications-top-25-cdr-by-account-id-time-frame-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
+}

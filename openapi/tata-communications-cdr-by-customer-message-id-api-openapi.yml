@@ -1,7 +1,7 @@
 openapi: 3.2.0
 info:
   version: '1.0'
-  title: Mobile Messaging Exchange - CDR Report CDR by Customer Message Id API
+  title: Mobile Messaging Exchange - CDR Report CDR by Customer…
 tags:
 - name: CDR by Customer Message Id
 paths:
@@ -45,6 +45,14 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
+    ErrorResponse:
+      properties:
+        status:
+          type: string
+          description: Http status of the response
+        message:
+          type: string
+          description: Error description
     SuccessResponse:
       properties:
         requestTime:
@@ -99,11 +107,3 @@ components:
           type: string
           example: Success
           description: This is the error description.
-    ErrorResponse:
-      properties:
-        status:
-          type: string
-          description: Http status of the response
-        message:
-          type: string
-          description: Error description

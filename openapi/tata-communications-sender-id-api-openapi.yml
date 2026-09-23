@@ -2,9 +2,9 @@ openapi: 3.2.0
 info:
   description: This API manage account and lookup reports.
   version: '1.0'
-  title: Mobile Messaging Exchange - Account Administration Sender ID API
+  title: Mobile Messaging Exchange - Account Administration Sender…
 tags:
-- name: SenderId
+- name: Sender ID
 paths:
   /senderId:
     post:
@@ -30,4 +30,6 @@ paths:
           application/json:
             schema: {}
       tags:
-      - SenderId
+      - Sender ID
+      summary: Postsender id
+      x-summary-source: derived
