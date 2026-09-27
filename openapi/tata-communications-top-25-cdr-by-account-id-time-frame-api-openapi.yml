@@ -71,28 +71,6 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
-    ErrorResponse:
-      properties:
-        status:
-          type: string
-          description: Http status of the response
-        message:
-          type: string
-          description: Error description
-    OutputList:
-      properties:
-        totalItems:
-          type: number
-          example: 100.0
-          description: Total No. of Items available
-        displayItems:
-          type: number
-          example: 25.0
-          description: Total No. of Items displayed
-        items:
-          type: array
-          items:
-            $ref: '#/components/schemas/SuccessResponse'
     SuccessResponse:
       properties:
         requestTime:
@@ -147,3 +125,25 @@ components:
           type: string
           example: Success
           description: This is the error description.
+    ErrorResponse:
+      properties:
+        status:
+          type: string
+          description: Http status of the response
+        message:
+          type: string
+          description: Error description
+    OutputList:
+      properties:
+        totalItems:
+          type: number
+          example: 100.0
+          description: Total No. of Items available
+        displayItems:
+          type: number
+          example: 25.0
+          description: Total No. of Items displayed
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/SuccessResponse'
