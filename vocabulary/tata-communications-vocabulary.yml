@@ -1,0 +1,31 @@
+generated: '2026-10-04'
+method: derived
+generator: derive-vocabulary.py
+source:
+- openapi/tata-communications-cdr-by-customer-message-id-api-openapi.yml
+- openapi/tata-communications-destination-api-openapi.yml
+- openapi/tata-communications-number-intelligence-api-openapi.yml
+- openapi/tata-communications-report-api-openapi.yml
+- openapi/tata-communications-sender-id-api-openapi.yml
+vocabulary:
+  name: Tata Communications Domain Vocabulary
+  description: 'Terms declared by Tata Communications''s own API contract: its resource groups, objects and enumerations, with the contract''s
+    definitions. Derived, not authored.'
+  version: '2026-10-04'
+  terms:
+  - term: SuccessResponse
+    definition: 'Object declared by the contract with fields: requestTime, lastDeliveredTime, messageId, accountId, destinationId, destinationCountry,
+      destinationAddress, originatingAddress, attemptedStatus, submittedStatus, deliveredStatus, errorCode. (1 more)'
+    tags:
+    - Object
+    source: openapi/tata-communications-cdr-by-customer-message-id-api-openapi.yml#/components/schemas/SuccessResponse
+  - term: ErrorResponse
+    definition: 'Object declared by the contract with fields: status, message.'
+    tags:
+    - Object
+    source: openapi/tata-communications-cdr-by-customer-message-id-api-openapi.yml#/components/schemas/ErrorResponse
+  - term: OutputList
+    definition: 'Object declared by the contract with fields: totalItems, displayItems, items.'
+    tags:
+    - Object
+    source: openapi/tata-communications-top-25-cdr-by-account-id-time-frame-api-openapi.yml#/components/schemas/OutputList

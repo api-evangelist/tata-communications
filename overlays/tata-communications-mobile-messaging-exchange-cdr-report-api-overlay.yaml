@@ -2,7 +2,7 @@ overlay: 1.0.0
 info:
   title: API Evangelist enhancements for Mobile Messaging Exchange - CDR Report API
   version: 1.0.0
-extends: openapi/tata-communications-mobile-messaging-exchange-cdr-report-api.json
+extends: ../openapi/_original/tata-communications-mobile-messaging-exchange-cdr-report-api.json
 actions:
 - target: $.info
   update:

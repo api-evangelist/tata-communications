@@ -1,0 +1,17 @@
+generated: '2026-10-04'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.tatacommunications.com/cloud/cloud-migration-services
+sources:
+- https://www.tatacommunications.com/cloud/cloud-migration-services
+- https://www.tatacommunications.com/cloud/sap-hana-to-cloud-migration
+- https://www.tatacommunications.com/docs/multi-cloud-connectivity/whats-new
+- https://www.tatacommunications.com/docs/multi-cloud-connectivity/whats-new/release-notes-index
+entries:
+- breaking: false
+  highlights:
+  - Initial baseline - current connectivity, cloud coverage, deployment scenarios, and self-serve capabilities.
+  date: 2026-06-01T00:00:00Z? (date not explicitly given, only month/year)??
+current_version: June 2026
+note: Only one release entry found on the provided pages.
+docs: https://www.tatacommunications.com/cloud/cloud-migration-services

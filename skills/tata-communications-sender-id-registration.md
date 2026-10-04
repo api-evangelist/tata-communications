@@ -1,5 +1,5 @@
 ---
-name: Register a sender ID and check destinations on the Mobile Messaging Exchange
+name: register-sender-id
 description: >-
   Check which destinations an account can reach, pull the lookup report, and submit a
   sender-ID whitelist request on the Tata Communications Mobile Messaging Exchange.

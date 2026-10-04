@@ -1,5 +1,7 @@
 generated: '2026-07-25'
 method: searched
+description: "No sandbox description published."
+docs: []
 source: >-
   https://developer.tatacommunications.com/api/apis/versions/{versionId};
   https://move-external-apim-prod.developer.azure-api.net/

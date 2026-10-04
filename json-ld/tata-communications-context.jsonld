@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://tatacommunications.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "tata": "https://tatacommunications.com/schema#",
+    "SuccessResponse": "tata:SuccessResponse",
+    "requestTime": {
+      "@id": "tata:requestTime",
+      "@type": "xsd:string"
+    },
+    "lastDeliveredTime": {
+      "@id": "tata:lastDeliveredTime",
+      "@type": "xsd:string"
+    },
+    "messageId": {
+      "@id": "tata:messageId",
+      "@type": "xsd:string"
+    },
+    "accountId": {
+      "@id": "tata:accountId",
+      "@type": "xsd:string"
+    },
+    "destinationId": {
+      "@id": "tata:destinationId",
+      "@type": "xsd:string"
+    },
+    "destinationCountry": {
+      "@id": "tata:destinationCountry",
+      "@type": "xsd:string"
+    },
+    "destinationAddress": {
+      "@id": "tata:destinationAddress",
+      "@type": "xsd:string"
+    },
+    "originatingAddress": {
+      "@id": "tata:originatingAddress",
+      "@type": "xsd:string"
+    },
+    "attemptedStatus": {
+      "@id": "tata:attemptedStatus",
+      "@type": "xsd:string"
+    },
+    "submittedStatus": {
+      "@id": "tata:submittedStatus",
+      "@type": "xsd:string"
+    },
+    "deliveredStatus": {
+      "@id": "tata:deliveredStatus",
+      "@type": "xsd:string"
+    },
+    "errorCode": {
+      "@id": "tata:errorCode",
+      "@type": "xsd:decimal"
+    },
+    "errorDescription": {
+      "@id": "tata:errorDescription",
+      "@type": "xsd:string"
+    },
+    "ErrorResponse": "tata:ErrorResponse",
+    "status": {
+      "@id": "tata:status",
+      "@type": "xsd:string"
+    },
+    "message": {
+      "@id": "tata:message",
+      "@type": "xsd:string"
+    },
+    "OutputList": "tata:OutputList",
+    "totalItems": {
+      "@id": "tata:totalItems",
+      "@type": "xsd:decimal"
+    },
+    "displayItems": {
+      "@id": "tata:displayItems",
+      "@type": "xsd:decimal"
+    },
+    "items": {
+      "@id": "tata:items",
+      "@container": "@list"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Tata Communications API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Tata Communications's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-04) from openapi/tata-communications-cdr-by-customer-message-id-api-openapi.yml, openapi/tata-communications-destination-api-openapi.yml, openapi/tata-communications-number-intelligence-api-openapi.yml.",
+  "dcterms:created": "2026-10-04",
+  "dcterms:source": [
+    "openapi/tata-communications-cdr-by-customer-message-id-api-openapi.yml",
+    "openapi/tata-communications-destination-api-openapi.yml",
+    "openapi/tata-communications-number-intelligence-api-openapi.yml",
+    "openapi/tata-communications-report-api-openapi.yml",
+    "openapi/tata-communications-sender-id-api-openapi.yml"
+  ]
+}

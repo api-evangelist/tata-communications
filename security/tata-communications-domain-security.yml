@@ -1,22 +1,23 @@
-generated: '2026-07-25'
+generated: '2026-10-04'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
 - host: www.tatacommunications.com
   https: true
   tls_version: TLSv1.3
-  cert_expires: Sep 29 22:14:23 2026 GMT
+  cert_expires: Nov 28 05:42:31 2026 GMT
   hsts: true
   hsts_max_age: 31536000
-- host: developer.tatacommunications.com
+- host: www.developer.move.tatacommunications.com
   https: true
-  tls_version: TLSv1.2
-  cert_expires: Dec 18 23:59:59 2026 GMT
-  hsts: false
+  tls_version: TLSv1.3
+  cert_expires: Oct 28 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
 - host: move-external-apim-prod.developer.azure-api.net
   https: true
   tls_version: TLSv1.3
-  cert_expires: Nov  1 21:14:07 2026 GMT
+  cert_expires: Feb 24 15:32:09 2027 GMT
   hsts: true
   hsts_max_age: 31536000
 domains:

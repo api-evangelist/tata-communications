@@ -2,7 +2,7 @@ overlay: 1.0.0
 info:
   title: API Evangelist enhancements for Mobile Messaging Exchange - Account Administration
   version: 1.0.0
-extends: openapi/tata-communications-mobile-messaging-exchange-account-administration.json
+extends: ../openapi/_original/tata-communications-mobile-messaging-exchange-account-administration.json
 actions:
 - target: $.info
   update:

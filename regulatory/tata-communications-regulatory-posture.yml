@@ -1,0 +1,32 @@
+generated: '2026-10-04'
+method: searched
+source:
+  - https://www.tatacommunications.com/policies/privacy
+signals:
+  data_subject_request:
+    - url: https://www.tatacommunications.com/policies/privacy
+      section: null
+      note: Allows data subjects to request deletion per applicable law.
+      evidence:
+        - source: https://www.tatacommunications.com/policies/privacy
+          http_status: 200
+          fetched: true
+          quote: "We retain personal data for as long as and/or for no longer than we are permitted to do by applicable law, regulation, tax or accounting practice or the terms of any governmental telecommunications licenses or authorisations to which we may be subject."
+  data_retention:
+    - url: https://www.tatacommunications.com/policies/privacy
+      section: null
+      note: Describes retention period limits.
+      evidence:
+        - source: https://www.tatacommunications.com/policies/privacy
+          http_status: 200
+          fetched: true
+          quote: "We retain personal data for as long as and/or for no longer than we are permitted to do by applicable law, regulation, tax or accounting practice or the terms of any governmental telecommunications licenses or authorisations to which we may be subject."
+  data_residency:
+    - url: https://www.tatacommunications.com/policies/privacy
+      section: null
+      note: Indicates cross‑border data transfers.
+      evidence:
+        - source: https://www.tatacommunications.com/policies/privacy
+          http_status: 200
+          fetched: true
+          quote: "Tata Communications may transfer personal data across national borders in running our business and delivering the Services. In doing so, your personal data may be transferred to and processed by other Tata Communications entities and/or unrelated third parties outside of the country where you are located or where the personal data was collected."

@@ -1,5 +1,5 @@
 ---
-name: Pull message CDRs from the Tata Communications Mobile Messaging Exchange
+name: pull-message-cdr-reporting
 description: >-
   Retrieve A2P/wholesale SMS call detail records for an account and time window, or for a
   single customer message id, from the Mobile Messaging Exchange CDR Report API.

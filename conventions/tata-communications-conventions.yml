@@ -14,13 +14,14 @@ authentication:
     Access Token API; a sales-issued auth token on DIGO.
   artifact: authentication/tata-communications-authentication.yml
 idempotency:
+  coverage: none
   supported: false
   header: null
   note: >-
     No idempotency key header, parameter, or retry-safety contract appears in any published
     Tata Communications specification or documentation. The one write operation that is
     anonymously readable (postsenderId, sender-ID whitelisting) documents no de-duplication
-    behaviour. No Idempotency pointer is emitted.
+    behaviour. No Idempotency pointer is emitted
 pagination:
   style: offset
   params:

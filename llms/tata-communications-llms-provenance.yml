@@ -1,0 +1,6 @@
+generated: '2026-10-04'
+method: probed
+generator: harvest-llms.py
+source: https://www.tatacommunications.com/hubfs/library/llms.txt
+bytes: 57994
+note: saved verbatim; the provider's own document

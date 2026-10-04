@@ -1,0 +1,196 @@
+generated: '2026-10-04'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 14
+  own: 9
+  other_domain: 3
+  platform: 2
+  roles:
+  - api
+  - docs
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.azure-api.net
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: azure-api.net
+  role: api
+  relation: other-domain
+- host: api.tatacommunications.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: tatacommunications.com
+  role: api
+  relation: own
+- host: developer.tatacommunications.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  - Documentation
+  - Login
+  serves:
+  - docs
+  - documentation
+  vendor: swagger-ui
+  registrable_domain: tatacommunications.com
+  role: portal
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: idp.tatacommunications.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: tatacommunications.com
+  role: other
+  relation: own
+- host: iot.tatacommunications.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: tatacommunications.com
+  role: other
+  relation: own
+- host: jobs.tatacommunications.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: tatacommunications.com
+  role: other
+  relation: own
+- host: move-external-apim-prod.azure-api.net
+  found_by:
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types: []
+  serves:
+  - api
+  - api-gateway
+  vendor: azure-apim
+  registrable_domain: azure-api.net
+  role: other
+  relation: other-domain
+- host: move-external-apim-prod.developer.azure-api.net
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  - SignUp
+  serves:
+  - docs
+  registrable_domain: azure-api.net
+  role: docs
+  relation: other-domain
+- host: optimus-dev.tatacommunications.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: tatacommunications.com
+  role: other
+  relation: own
+- host: sustainability.tatacommunications.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: tatacommunications.com
+  role: other
+  relation: own
+- host: www.developer.move.tatacommunications.com
+  found_by:
+  - pointer
+  - probed
+  - well-known
+  types:
+  - Portal
+  serves: []
+  registrable_domain: tatacommunications.com
+  role: portal
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.tatacommunications.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - Newsroom
+  - Leadership
+  - ChangeLog
+  - GettingStarted
+  - Compliance
+  - Website
+  - Documentation
+  - Blog
+  - Support
+  - HelpCenter
+  - Pricing
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: tatacommunications.com
+  role: website
+  relation: own

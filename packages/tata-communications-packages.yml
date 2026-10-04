@@ -6,7 +6,7 @@ notes: >-
   Both plausible GitHub organisations resolve but publish nothing, and no SDK is offered on
   the developer portal, the MOVE portal, or the DIGO documentation site. Recorded as a
   verified absence — no SDKs pointer is emitted.
-packages: []
+
 registries_probed:
 - registry: npm
   query: tata communications
