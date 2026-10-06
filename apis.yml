@@ -66,7 +66,7 @@ tags:
 
 created: '2026-07-25'
 
-modified: '2026-07-25'
+modified: '2026-10-06'
 
 specificationVersion: '0.23'
 
@@ -75,6 +75,8 @@ maintainers:
   email: kin@apievangelist.com
 
 common:
+- url: https://www.tatacommunications.com/blog/rss.xml
+  type: BlogRSS
 - type: Spectral
   url: rules/tata-communications-rules.yml
 - type: JSONLD
