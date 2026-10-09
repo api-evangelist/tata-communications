@@ -39,6 +39,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: partner
+  gated_source:
+  - tag:Partner Gated
   label: Self-serve signup
   confidence: medium
   source:
@@ -62,7 +65,6 @@ tags:
 - Number Intelligence
 - Connectivity
 - Subsea Cable
-- Partner Gated
 
 created: '2026-07-25'
 
@@ -422,3 +424,5 @@ x-enrichment:
   artifacts_added: 10
   pass: modular-v1
   engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
+x-tags-removed:
+- Partner Gated
