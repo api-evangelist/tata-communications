@@ -8,6 +8,10 @@ checked:
 - https://focus.finops.org/data-generators/
 - https://github.com/cncf/k8s-conformance
 - https://github.com/cncf/landscape
+- https://manrs.org/netops/participants/
+- https://www.peeringdb.com/api/fac
+- https://www.peeringdb.com/api/ix
+- https://www.peeringdb.com/api/net
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -176,6 +180,38 @@ edges:
     detected_by: sweep-compliance-assurance.py
     detected: '2026-10-20'
   detected_by: sweep-compliance-assurance.py
+  first_seen: '2026-10-20'
+- partner_name: PeeringDB (interconnection register)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.peeringdb.com/net/437
+  category: network interconnection register
+  contract_reference:
+    register: PeeringDB (peeringdb.com/api net, ix, fac, org)
+    standard: null
+    spec_file: null
+    role: peeringdb-facility-operator+network
+    registered_name: TATA Communications Ltd
+    register_id: https://www.peeringdb.com/net/437
+    matched_domain: tatacommunications.com
+    matched_by: domain
+    asns:
+    - 4755
+    - 6453
+    info_types:
+    - NSP
+    ix_presence: 4
+    exchanges_operated: []
+    facilities_operated: 11
+    signal_note: 'participation only: PeeringDB is self-registered by network operators; ASNs, IX presence and facility
+      counts are context, never counted'
+    detected_by: sweep-network-edge.py
+    detected: '2026-10-20'
+  detected_by: sweep-network-edge.py
   first_seen: '2026-10-20'
 source:
 - https://github.com/cncf/landscape
